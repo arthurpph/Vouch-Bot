@@ -1,11 +1,13 @@
 from discord import app_commands, User, Role, Forbidden
 from discord.ext import commands
-from main import config, div_roles
+from main import div_roles
 
 from exceptions import InsufficientPermission, InvalidChannelId
 
+from config import Config
 
-class cog1(commands.Cog):
+
+class Commands(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
@@ -16,9 +18,9 @@ class cog1(commands.Cog):
         guild = ctx.guild
 
         if modo == "1v1":
-            channelId = config["div1LogChannelId"]
+            channelId = Config.get_div_log_channel_id(1)
         elif modo == "2v2":
-            channelId = config["div2LogChannelId"]
+            channelId = Config.get_div_log_channel_id(2)
         else:
             await ctx.response.send_message("Modo de jogo inválido")
             return
@@ -28,12 +30,11 @@ class cog1(commands.Cog):
             await ctx.response.send_message("Chat inválido, nenhuma ação foi realizada")
             return
 
-        council_duels_role = guild.get_role(int(config["councilDuelsRoleId"]))
+        council_duels_role = guild.get_role(int(Config.get_council_duels_role_id()))
         if not council_duels_role:
             await ctx.response.send_message("Cargo 'Council Duels' inválido, nenhuma ação foi realizada")
 
-        await channel.send(
-            f"{ctx.user.mention} está disponível para duelos de vouch {modo} {council_duels_role.mention}!")
+        await channel.send(f"{ctx.user.mention} está disponível para duelos de vouch {modo} {council_duels_role.mention}!")
         await ctx.response.send_message("Aviso criado!", ephemeral=True)
 
     @app_commands.command(name="promote", description="Promove um usuário para uma divisão")
@@ -41,7 +42,7 @@ class cog1(commands.Cog):
     async def promote(self, ctx: commands.Context, user: User, role: Role):
         guild = ctx.guild
         member = await guild.fetch_member(user.id)
-        channel = guild.get_channel(int(config["promotionsChannelId"]))
+        channel = guild.get_channel(int(Config.get_promotions_channel_id()))
 
         try:
             if not guild.me.guild_permissions.manage_roles:
@@ -58,7 +59,7 @@ class cog1(commands.Cog):
                 if member_role.id in div_roles:
                     await member.remove_roles(member_role)
 
-            casual_role = guild.get_role(int(config["casualRoleId"]))
+            casual_role = guild.get_role(int(Config.get_casual_role_id()))
             if casual_role in member.roles:
                 await member.remove_roles(casual_role)
 
@@ -75,7 +76,7 @@ class cog1(commands.Cog):
     async def purge(self, ctx: commands.Context, user: User):
         guild = ctx.guild
         member = await guild.fetch_member(user.id)
-        casual = guild.get_role(int(config['casualRoleId']))
+        casual = guild.get_role(int(Config.get_casual_role_id()))
 
         if not guild.me.guild_permissions.manage_roles:
             await ctx.response.send_message("Não tenho permissão para alterar cargos", ephemeral=True)
@@ -101,4 +102,4 @@ class cog1(commands.Cog):
 
 
 async def setup(bot):
-    await bot.add_cog(cog1(bot))
+    await bot.add_cog(Commands(bot))

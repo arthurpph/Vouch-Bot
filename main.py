@@ -4,12 +4,13 @@ import os
 
 import nest_asyncio
 from dotenv import load_dotenv
-from discord import Intents, Message, User, Role, app_commands, Forbidden
+from discord import Intents
 from discord.ext import commands
 
-from exceptions import InsufficientPermission, InvalidChannelId
 
-from config import config
+from config import Config
+
+Config.load_config()
 
 load_dotenv()
 TOKEN: Final[str] = os.getenv("DISCORD_TOKEN")
@@ -21,10 +22,7 @@ intents.members = True  # NOQA
 
 bot = commands.Bot(command_prefix="/", intents=intents)
 
-div_roles = [int(config["div1RoleId"]),
-             int(config["div2RoleId"]),
-             int(config["div3RoleId"]),
-             int(config["div4RoleId"])]
+div_roles = Config.get_div_roles_id()
 
 
 @bot.event
