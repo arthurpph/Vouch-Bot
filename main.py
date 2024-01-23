@@ -9,10 +9,12 @@ from discord.ext import commands
 
 from config import Config
 from vouch import Vouch
-from logger import get_logger
+from logger import load_logger, get_logger
 
 Config.load_config()
 Vouch.load_vouches()
+load_logger()
+
 logger = get_logger()
 
 load_dotenv()
