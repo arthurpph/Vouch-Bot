@@ -9,9 +9,11 @@ from discord.ext import commands
 
 from config import Config
 from vouch import Vouch
+from logger import get_logger
 
 Config.load_config()
 Vouch.load_vouches()
+logger = get_logger()
 
 load_dotenv()
 TOKEN: Final[str] = os.getenv("DISCORD_TOKEN")
@@ -33,7 +35,7 @@ async def on_ready():
         synced = await bot.tree.sync()
         print(f"Sincronizado {len(synced)} comando(s)")
     except Exception as e:
-        print(e)
+        logger.exception(f"Exceção ocorreu durante a inicialização do bot: {e}")
 
 
 async def load_extensions():

@@ -1,11 +1,16 @@
-from discord import app_commands, User, Role, Forbidden
+import discord
+from discord import app_commands, User, Role, Forbidden, Embed
 from discord.ext import commands
 from main import div_roles
 
-from exceptions import InsufficientPermission, InvalidChannelId
+from exceptions import InsufficientPermission, InvalidChannelId, InvalidUser
 
 from config import Config
 from vouch import Vouch
+from utils import convert_data_to_discord_format, get_past_time_in_months
+from logger import get_logger
+
+logger = get_logger()
 
 
 class Commands(commands.Cog):
@@ -15,6 +20,8 @@ class Commands(commands.Cog):
     @app_commands.command(name="disponivel", description="Anúncia que você está disponível para batalha")
     @app_commands.describe(modo="modo")
     async def disponivel(self, ctx: commands.Context, modo: str):
+        logger.info(f"Command: /disponivel {modo} by {ctx.user.name}")
+
         global channelId
         guild = ctx.guild
 
@@ -40,16 +47,58 @@ class Commands(commands.Cog):
         await ctx.response.send_message("Aviso criado!", ephemeral=True)
 
     @app_commands.command(name="give_vouch", description="Atribui um vouch a um usuário")
-    @app_commands.describe(usuario="usuário", nome="nome", descricao="descrição")
-    async def give_vouch(self, ctx: commands.Context, usuario: User, nome: str, descricao: str):
-        guild = ctx.guild
-        Vouch.add_vouch(usuario.id, nome, descricao, ctx.user.id)
+    @app_commands.describe(usuario="usuário", descricao="descrição")
+    async def give_vouch(self, ctx: commands.Context, usuario: User, descricao: str):
+        logger.info(f"Command: /give_vouch {usuario} {descricao} by {ctx.user.name}")
+
+        Vouch.add_vouch(usuario.id, descricao, ctx.user.id)
         await usuario.send(f"Você recebeu um vouch por {ctx.user.mention}!")
         await ctx.response.send_message("Vouch adicionado!", ephemeral=True)
+
+    @app_commands.command(name="vouches", description="Mostra os vouches de um jogador")
+    @app_commands.describe(usuario="usuário", rank="rank")
+    async def vouches(self, ctx: commands.Context, usuario: User, rank: Role):
+        logger.info(f"Command: /vouches {usuario} {rank} by {ctx.user.name}")
+
+        guild = ctx.guild
+
+        if not Vouch.user_has_vouches(usuario.id):
+            embed = Embed(description=f"{usuario.mention} nunca recebeu nenhum vouch.", color=discord.Color.blue())
+            await ctx.response.send_message(embed=embed, ephemeral=True)
+            return
+
+        expired = 0
+
+        embed = Embed(title="Vouches", color=discord.Color.blue())
+        embed.set_author(name=f"{usuario.name} ({usuario.id})", icon_url=usuario.avatar)
+
+        try:
+            for vouch_id in Vouch.get_user_vouches(usuario.id):
+                attributed_by_user = guild.get_member(Vouch.get_attributed_by(usuario.id, vouch_id))
+                if not attributed_by_user:
+                    raise InvalidUser("Usuário que atribuiu o vouch é inválido")
+
+                vouch_issued_at = Vouch.get_date(usuario.id, vouch_id)
+
+                if get_past_time_in_months(vouch_issued_at) >= 4:
+                    expired += 1
+
+                embed.add_field(name=f"{attributed_by_user.name} Vouch | {convert_data_to_discord_format(vouch_issued_at)}", value=f"Concedido por {attributed_by_user.mention}", inline=False)
+        except InvalidUser as e:
+            await ctx.response.send_message(f"Erro: {e}", ephemeral=True)
+            return
+
+        embed.set_footer(text=f"+ {str(expired)} Vouch(es) expirados\n"
+                              f"(Vouches expiram depois de 4 meses)")
+
+        await ctx.response.send_message(embed=embed, ephemeral=True)
+
 
     @app_commands.command(name="promote", description="Promove um usuário para uma divisão")
     @app_commands.describe(usuario="usuário", cargo="cargo")
     async def promote(self, ctx: commands.Context, usuario: User, cargo: Role):
+        logger.info(f"Command: /promote {usuario} {cargo} by {ctx.user.name}")
+
         guild = ctx.guild
         member = await guild.fetch_member(usuario.id)
         channel = guild.get_channel(int(Config.get_promotions_channel_id()))
@@ -84,6 +133,8 @@ class Commands(commands.Cog):
     @app_commands.command(name="purge", description="Remove um usuário de todas as divisões")
     @app_commands.describe(usuario="usuário")
     async def purge(self, ctx: commands.Context, usuario: User):
+        logger.info(f"Command: /purge {usuario} by {ctx.user.name}")
+
         guild = ctx.guild
         member = await guild.fetch_member(usuario.id)
         casual = guild.get_role(int(Config.get_casual_role_id()))
