@@ -7,10 +7,11 @@ from dotenv import load_dotenv
 from discord import Intents
 from discord.ext import commands
 
-
 from config import Config
+from vouch import Vouch
 
 Config.load_config()
+Vouch.load_vouches()
 
 load_dotenv()
 TOKEN: Final[str] = os.getenv("DISCORD_TOKEN")
