@@ -8,3 +8,7 @@ class InvalidChannelId(Exception):
 
 class InvalidUser(Exception):
     pass
+
+
+class InvalidRole(Exception):
+    pass

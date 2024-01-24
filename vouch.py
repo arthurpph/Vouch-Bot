@@ -7,7 +7,7 @@ class Vouch:
     file_path = None
     loaded_vouches = None
     backup_data = None
-    vouch_keys = ["description", "attributed_by", "date"]
+    vouch_keys = ["description", "attributed_by", "date", "division_at_the_insertion"]
 
     @staticmethod
     def load_vouches():
@@ -26,6 +26,13 @@ class Vouch:
         return Vouch.loaded_vouches[str(user_id)]
 
     @staticmethod
+    def get_description(user_id: int, vouch_id: str):
+        if not Vouch._check_keys(user_id, vouch_id):
+            return None
+
+        return Vouch.loaded_vouches[str(user_id)][vouch_id]["description"]
+
+    @staticmethod
     def get_attributed_by(user_id: int, vouch_id: str):
         if not Vouch._check_keys(user_id, vouch_id):
             return None
@@ -40,6 +47,13 @@ class Vouch:
         return Vouch.loaded_vouches[str(user_id)][vouch_id]["date"]
 
     @staticmethod
+    def get_division_at_the_insertion(user_id: int, vouch_id: str):
+        if not Vouch._check_keys(user_id, vouch_id):
+            return None
+
+        return Vouch.loaded_vouches[str(user_id)][vouch_id]["division_at_the_insertion"]
+
+    @staticmethod
     def user_has_vouches(user_id: int):
         if str(user_id) in Vouch.loaded_vouches:
             return True
@@ -47,7 +61,7 @@ class Vouch:
         return False
 
     @staticmethod
-    def add_vouch(user_id: int, description: str, attributed_by_user_id: int):
+    def add_vouch(user_id: int, description: str, attributed_by_user_id: int, current_division: str):
         user_vouches = Vouch.loaded_vouches.get(str(user_id))
 
         if not user_vouches:
@@ -55,7 +69,7 @@ class Vouch:
         else:
             last_key = int(list(user_vouches.keys())[-1])
 
-        Vouch._add_vouch_keys(user_id, last_key + 1, description, attributed_by_user_id)
+        Vouch._add_vouch_keys(user_id, last_key + 1, description, attributed_by_user_id, current_division)
 
     @staticmethod
     def _check_keys(user_id: int, vouch_id: str):
@@ -70,7 +84,7 @@ class Vouch:
         return True
 
     @staticmethod
-    def _add_vouch_keys(user_id: int, vouch_id: int, description: str, attributed_by: int):
+    def _add_vouch_keys(user_id: int, vouch_id: int, description: str, attributed_by: int, current_division: str):
         try:
             Vouch._save_backup()
 
@@ -83,6 +97,7 @@ class Vouch:
                     Vouch.vouch_keys[0]: description,
                     Vouch.vouch_keys[1]: str(attributed_by),
                     Vouch.vouch_keys[2]: datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                    Vouch.vouch_keys[3]: current_division
                 }
 
                 file.truncate(0)

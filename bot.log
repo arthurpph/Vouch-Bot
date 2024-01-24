@@ -14,3 +14,919 @@
 2024-01-23 19:16:29,540:INFO:discord.client: logging in using static token
 2024-01-23 19:16:30,682:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: a16464e63ed9c5433a32a13891a5c88e).
 2024-01-23 19:16:36,527:INFO:discord: Command: /vouches shauuu_ div1 by shauuu_
+2024-01-23 20:00:30,459:INFO:discord.gateway: Shard ID None has successfully RESUMED session a16464e63ed9c5433a32a13891a5c88e.
+2024-01-23 20:16:05,189:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 20:16:16,520:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 20:16:16,540:INFO:discord.client: logging in using static token
+2024-01-23 20:16:17,684:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: eda485f5499e9f77133ae2f1693687a6).
+2024-01-23 20:17:11,404:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 20:33:47,092:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 20:33:47,163:INFO:discord.client: logging in using static token
+2024-01-23 20:33:48,385:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 42aab7c3d633242beeda7f13a95657da).
+2024-01-23 20:34:14,006:INFO:discord: Command: /promote shauuu_ Divisão 1 by shauuu_
+2024-01-23 20:34:54,267:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 20:34:54,278:INFO:discord.client: logging in using static token
+2024-01-23 20:34:55,438:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: deeff3d2172c10d3072e179963f2bc89).
+2024-01-23 20:35:04,515:INFO:discord: Command: /promote shauuu_ Divisão 1 by shauuu_
+2024-01-23 20:36:09,861:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 20:36:09,894:INFO:discord.client: logging in using static token
+2024-01-23 20:36:11,091:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 61f6cdaf7456745fd101cd00811b717c).
+2024-01-23 20:36:23,054:INFO:discord: Command: /promote shauuu_ Divisão 1 by shauuu_
+2024-01-23 20:36:52,470:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 20:36:52,485:INFO:discord.client: logging in using static token
+2024-01-23 20:36:53,599:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 00668cab95aa581a82939a5532f12041).
+2024-01-23 20:37:21,248:INFO:discord: Command: /promote shauuu_ Divisão 1 by shauuu_
+2024-01-23 20:37:21,934:ERROR:discord.app_commands.tree: Ignoring exception in command 'promote'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 144, in promote
+    await member.add_roles(role)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\member.py", line 1051, in add_roles
+    await req(guild_id, user_id, role.id, reason=reason)
+AttributeError: 'NoneType' object has no attribute 'id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'promote' raised an exception: AttributeError: 'NoneType' object has no attribute 'id'
+2024-01-23 20:41:59,948:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 20:41:59,968:INFO:discord.client: logging in using static token
+2024-01-23 20:42:01,213:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 45e1db9adacdcb5e6dd0b55c7f2993bd).
+2024-01-23 20:42:12,348:INFO:discord: Command: /promote shauuu_ Divisão 2 by shauuu_
+2024-01-23 20:42:12,838:ERROR:discord.app_commands.tree: Ignoring exception in command 'promote'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 147, in promote
+    await member.add_roles(role)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\member.py", line 1051, in add_roles
+    await req(guild_id, user_id, role.id, reason=reason)
+AttributeError: 'NoneType' object has no attribute 'id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'promote' raised an exception: AttributeError: 'NoneType' object has no attribute 'id'
+2024-01-23 20:42:29,833:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 20:42:29,851:INFO:discord.client: logging in using static token
+2024-01-23 20:42:31,025:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 492ceb55b083278bcaaf0b3d6bdb15f3).
+2024-01-23 20:44:29,346:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 20:44:29,359:INFO:discord.client: logging in using static token
+2024-01-23 20:44:30,520:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: f6fccb1f976482bd329fb6f58698a5e6).
+2024-01-23 20:44:40,790:INFO:discord: Command: /promote shauuu_ Divisão 1 by shauuu_
+2024-01-23 20:52:25,960:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 20:52:25,966:INFO:discord.client: logging in using static token
+2024-01-23 20:52:27,091:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: cf6a32b586c7dc68d126f760f98ba75e).
+2024-01-23 20:52:50,401:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-23 20:53:04,579:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-23 20:53:40,878:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 20:53:40,883:INFO:discord.client: logging in using static token
+2024-01-23 20:53:42,100:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 14c8f99693dda3853aedbd6cfaef946b).
+2024-01-23 20:53:52,525:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-23 20:56:29,464:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 20:56:29,470:INFO:discord.client: logging in using static token
+2024-01-23 20:56:30,623:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 181ad7d508e61cf5718fefc32d356572).
+2024-01-23 20:56:40,934:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 20:57:19,266:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-23 20:57:26,315:INFO:discord: Command: /vouches shauuu_ Divisão 2 by shauuu_
+2024-01-23 21:38:13,596:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 21:38:13,610:INFO:discord.client: logging in using static token
+2024-01-23 21:38:14,819:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: dd99ab9a57b9925f6cf7622c5f4082b8).
+2024-01-23 21:38:27,312:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-23 21:38:27,312:ERROR:discord.app_commands.tree: Ignoring exception in command 'give_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 54, in give_vouch
+    current_division = convert_role_to_name(ctx.guild.get_member(usuario.id))
+  File "D:\PyCharmProjects\Vouch Bot\utils.py", line 50, in convert_role_to_name
+    if role.id in div_roles.values():
+AttributeError: 'list' object has no attribute 'values'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'give_vouch' raised an exception: AttributeError: 'list' object has no attribute 'values'
+2024-01-23 21:39:15,751:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 21:39:15,769:INFO:discord.client: logging in using static token
+2024-01-23 21:39:16,845:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 014e6c16264d991175c2fa17193cd5d2).
+2024-01-23 21:39:21,118:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-23 21:39:21,119:ERROR:discord.app_commands.tree: Ignoring exception in command 'give_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 54, in give_vouch
+    current_division = convert_role_to_name(ctx.guild.get_member(usuario.id))
+  File "D:\PyCharmProjects\Vouch Bot\utils.py", line 50, in convert_role_to_name
+    if role.id in div_roles.values():
+AttributeError: 'list' object has no attribute 'values'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'give_vouch' raised an exception: AttributeError: 'list' object has no attribute 'values'
+2024-01-23 21:39:32,180:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 21:39:32,192:INFO:discord.client: logging in using static token
+2024-01-23 21:39:33,276:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 28627afa8a473a1cd13fa8a1daa2b659).
+2024-01-23 21:39:40,457:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-23 21:39:40,457:ERROR:discord.app_commands.tree: Ignoring exception in command 'give_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 54, in give_vouch
+    current_division = convert_role_to_name(ctx.guild.get_member(usuario.id))
+  File "D:\PyCharmProjects\Vouch Bot\utils.py", line 50, in convert_role_to_name
+    if role.id in div_roles.values():
+AttributeError: 'list' object has no attribute 'values'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'give_vouch' raised an exception: AttributeError: 'list' object has no attribute 'values'
+2024-01-23 21:39:57,077:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 21:39:57,089:INFO:discord.client: logging in using static token
+2024-01-23 21:39:59,673:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: ff742523ce579335c12c0c97100199ae).
+2024-01-23 21:40:03,225:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-23 21:40:03,225:ERROR:discord.app_commands.tree: Ignoring exception in command 'give_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 55, in give_vouch
+    current_division = convert_role_to_name(ctx.guild.get_member(usuario.id))
+  File "D:\PyCharmProjects\Vouch Bot\utils.py", line 50, in convert_role_to_name
+    if role.id in div_roles.values():
+AttributeError: 'list' object has no attribute 'values'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'give_vouch' raised an exception: AttributeError: 'list' object has no attribute 'values'
+2024-01-23 21:40:27,953:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 21:40:27,967:INFO:discord.client: logging in using static token
+2024-01-23 21:40:29,095:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: e2e8f63d725fa85b57e82bbef2dcd46a).
+2024-01-23 21:40:44,963:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-23 21:40:44,963:ERROR:discord.app_commands.tree: Ignoring exception in command 'give_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 55, in give_vouch
+    current_division = convert_role_to_name(ctx.guild.get_member(usuario.id))
+  File "D:\PyCharmProjects\Vouch Bot\utils.py", line 50, in convert_role_to_name
+    if role.id in div_roles.values():
+AttributeError: 'list' object has no attribute 'values'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'give_vouch' raised an exception: AttributeError: 'list' object has no attribute 'values'
+2024-01-23 21:41:31,251:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 21:41:31,263:INFO:discord.client: logging in using static token
+2024-01-23 21:41:32,511:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 4beca2fd77af167d7200dd4ec9db14f9).
+2024-01-23 21:41:36,108:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-23 21:41:36,108:ERROR:discord.app_commands.tree: Ignoring exception in command 'give_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 55, in give_vouch
+    current_division = convert_role_to_name(ctx.guild.get_member(usuario.id))
+  File "D:\PyCharmProjects\Vouch Bot\utils.py", line 50, in convert_role_to_name
+    if role.id in div_roles.values():
+AttributeError: 'list' object has no attribute 'values'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'give_vouch' raised an exception: AttributeError: 'list' object has no attribute 'values'
+2024-01-23 21:42:07,762:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 21:42:07,777:INFO:discord.client: logging in using static token
+2024-01-23 21:42:09,243:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 6f9d7c497d14e589427ee38b3d1e534c).
+2024-01-23 21:42:13,117:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-23 21:42:13,117:ERROR:discord.app_commands.tree: Ignoring exception in command 'give_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 54, in give_vouch
+    current_division = convert_role_to_name(ctx.guild.get_member(usuario.id))
+  File "D:\PyCharmProjects\Vouch Bot\utils.py", line 50, in convert_role_to_name
+    if role.id in div_roles.values():
+AttributeError: 'list' object has no attribute 'values'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'give_vouch' raised an exception: AttributeError: 'list' object has no attribute 'values'
+2024-01-23 21:42:40,247:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 21:42:40,260:INFO:discord.client: logging in using static token
+2024-01-23 21:42:41,437:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 52bdc004759aae240182e29fa241dbcf).
+2024-01-23 21:42:46,975:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-23 21:42:46,975:ERROR:discord.app_commands.tree: Ignoring exception in command 'give_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 54, in give_vouch
+    current_division = convert_role_to_name(ctx.guild.get_member(usuario.id))
+  File "D:\PyCharmProjects\Vouch Bot\utils.py", line 49, in convert_role_to_name
+    if role.id in div_roles.values():
+AttributeError: 'list' object has no attribute 'values'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'give_vouch' raised an exception: AttributeError: 'list' object has no attribute 'values'
+2024-01-23 21:42:56,058:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 21:42:56,069:INFO:discord.client: logging in using static token
+2024-01-23 21:42:57,178:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 0d1f2eb1715dcc10c106fb2ffb84bf20).
+2024-01-23 21:43:05,650:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-23 21:43:05,651:ERROR:discord.app_commands.tree: Ignoring exception in command 'give_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 54, in give_vouch
+    current_division = convert_role_to_name(ctx.guild.get_member(usuario.id))
+  File "D:\PyCharmProjects\Vouch Bot\utils.py", line 50, in convert_role_to_name
+    if role.id in div_roles.values():
+AttributeError: 'list' object has no attribute 'values'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'give_vouch' raised an exception: AttributeError: 'list' object has no attribute 'values'
+2024-01-23 21:43:17,466:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 21:43:17,479:INFO:discord.client: logging in using static token
+2024-01-23 21:43:18,494:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 88bdd5232160ab987796f7ad361c6a6c).
+2024-01-23 21:46:43,084:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 21:46:43,095:INFO:discord.client: logging in using static token
+2024-01-23 21:46:44,430:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: e32e30d62a57f5f6f96b6ed720daa729).
+2024-01-23 21:46:53,679:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-23 21:47:32,374:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 21:47:32,437:INFO:discord.client: logging in using static token
+2024-01-23 21:47:33,521:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 8c85635d1c06d2441bcc4bf09a9806b1).
+2024-01-23 21:47:44,585:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-23 21:47:58,336:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-23 22:12:36,936:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:12:36,955:INFO:discord.client: logging in using static token
+2024-01-23 22:12:38,246:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 4c86a1ae9b25d7e15948c0da76128261).
+2024-01-23 22:13:36,400:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:13:36,416:INFO:discord.client: logging in using static token
+2024-01-23 22:13:37,604:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 5122efa214e9536c599c60f962e384e3).
+2024-01-23 22:14:04,917:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:14:04,930:INFO:discord.client: logging in using static token
+2024-01-23 22:14:06,052:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: cdacc72f43c90d4abe8e48f221ee2f45).
+2024-01-23 22:14:31,136:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 22:14:31,139:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 100, in vouches
+    if int(role_to_name.split(" ")[1]) < int(convert_role_to_name(Vouch.get_division_at_the_insertion(usuario.id, vouch_id)).split(" ")[1]):
+  File "D:\PyCharmProjects\Vouch Bot\utils.py", line 47, in convert_role_to_name
+    for role in member.roles:
+AttributeError: 'str' object has no attribute 'roles'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: AttributeError: 'str' object has no attribute 'roles'
+2024-01-23 22:15:33,335:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:15:33,349:INFO:discord.client: logging in using static token
+2024-01-23 22:15:34,457:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 60b3421c8eb122959981c8084d2d16c4).
+2024-01-23 22:15:51,221:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-23 22:16:08,053:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 22:16:08,056:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 98, in vouches
+    if int(rank.split(" ")[1]) < int(convert_role_to_name(Vouch.get_division_at_the_insertion(usuario.id, vouch_id)).split(" ")[1]):
+AttributeError: 'Choice' object has no attribute 'split'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: AttributeError: 'Choice' object has no attribute 'split'
+2024-01-23 22:16:52,628:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:16:52,642:INFO:discord.client: logging in using static token
+2024-01-23 22:16:53,864:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: c043c7a9e7a7a8bff59bb2f9af9e13a9).
+2024-01-23 22:17:00,395:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 22:17:00,397:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 97, in vouches
+    print(int(rank.split(" ")[1]) < int(convert_role_to_name(Vouch.get_division_at_the_insertion(usuario.id, vouch_id)).split(" ")[1]))
+AttributeError: 'Choice' object has no attribute 'split'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: AttributeError: 'Choice' object has no attribute 'split'
+2024-01-23 22:17:09,639:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:17:09,653:INFO:discord.client: logging in using static token
+2024-01-23 22:17:10,775:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: dec48986bd787965fc08ae809b078924).
+2024-01-23 22:17:18,710:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 22:17:18,712:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 99, in vouches
+    if int(rank.split(" ")[1]) < int(convert_role_to_name(Vouch.get_division_at_the_insertion(usuario.id, vouch_id)).split(" ")[1]):
+AttributeError: 'Choice' object has no attribute 'split'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: AttributeError: 'Choice' object has no attribute 'split'
+2024-01-23 22:17:55,461:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:17:55,475:INFO:discord.client: logging in using static token
+2024-01-23 22:17:56,756:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: b96a27fe3de42cc4231b2a6416da3ec5).
+2024-01-23 22:18:01,830:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 22:18:01,832:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 98, in vouches
+    print(rank.split(" "))
+AttributeError: 'Choice' object has no attribute 'split'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: AttributeError: 'Choice' object has no attribute 'split'
+2024-01-23 22:18:07,934:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:18:07,947:INFO:discord.client: logging in using static token
+2024-01-23 22:18:09,198:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 24d3dbfcfb368faff652d667782553a2).
+2024-01-23 22:18:12,787:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 22:18:12,789:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 99, in vouches
+    if int(rank.split(" ")[1]) < int(convert_role_to_name(Vouch.get_division_at_the_insertion(usuario.id, vouch_id)).split(" ")[1]):
+AttributeError: 'Choice' object has no attribute 'split'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: AttributeError: 'Choice' object has no attribute 'split'
+2024-01-23 22:18:32,436:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:18:32,449:INFO:discord.client: logging in using static token
+2024-01-23 22:18:33,574:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 6833c5f02cda9a62622411c6cec3e062).
+2024-01-23 22:18:43,165:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 22:18:43,168:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 98, in vouches
+    if int(rank.name.split(" ")[1]) < int(convert_role_to_name(Vouch.get_division_at_the_insertion(usuario.id, vouch_id)).split(" ")[1]):
+  File "D:\PyCharmProjects\Vouch Bot\utils.py", line 47, in convert_role_to_name
+    for role in member.roles:
+AttributeError: 'str' object has no attribute 'roles'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: AttributeError: 'str' object has no attribute 'roles'
+2024-01-23 22:18:56,346:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:18:56,359:INFO:discord.client: logging in using static token
+2024-01-23 22:18:57,495:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 9e5d720033fe63502d6636c0e06cb370).
+2024-01-23 22:19:06,403:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 22:19:06,405:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 99, in vouches
+    if int(rank.name.split(" ")[1]) < int(convert_role_to_name(Vouch.get_division_at_the_insertion(usuario.id, vouch_id)).split(" ")[1]):
+  File "D:\PyCharmProjects\Vouch Bot\utils.py", line 47, in convert_role_to_name
+    for role in member.roles:
+AttributeError: 'str' object has no attribute 'roles'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: AttributeError: 'str' object has no attribute 'roles'
+2024-01-23 22:19:18,782:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:19:18,796:INFO:discord.client: logging in using static token
+2024-01-23 22:19:19,932:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 0fd7f2fc6421c2bc01adfadc601cb90e).
+2024-01-23 22:19:22,186:WARNING:discord.http: We are being rate limited. PUT https://discord.com/api/v10/applications/1198496806124933190/commands responded with 429. Retrying in 6.90 seconds.
+2024-01-23 22:19:28,643:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 22:19:28,646:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 99, in vouches
+    if int(rank.name.split(" ")[1]) < int(convert_role_to_name(Vouch.get_division_at_the_insertion(usuario.id, vouch_id)).split(" ")[1]):
+  File "D:\PyCharmProjects\Vouch Bot\utils.py", line 47, in convert_role_to_name
+    for role in member.roles:
+AttributeError: 'str' object has no attribute 'roles'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: AttributeError: 'str' object has no attribute 'roles'
+2024-01-23 22:20:24,567:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:20:24,580:INFO:discord.client: logging in using static token
+2024-01-23 22:20:25,856:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 5c1f9cd9f4153f7ad5bf9883d839e01c).
+2024-01-23 22:20:32,401:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 22:20:32,404:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 99, in vouches
+    print(convert_role_to_name(Vouch.get_division_at_the_insertion(usuario.id, vouch_id)))
+  File "D:\PyCharmProjects\Vouch Bot\utils.py", line 47, in convert_role_to_name
+    for role in member.roles:
+AttributeError: 'str' object has no attribute 'roles'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: AttributeError: 'str' object has no attribute 'roles'
+2024-01-23 22:21:08,323:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:21:08,336:INFO:discord.client: logging in using static token
+2024-01-23 22:21:09,478:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 1750403c0b62292c688fd9f63565594f).
+2024-01-23 22:21:19,646:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 22:21:19,648:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 104, in vouches
+    if embed.fields.len() == 0:
+AttributeError: 'list' object has no attribute 'len'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: AttributeError: 'list' object has no attribute 'len'
+2024-01-23 22:21:52,993:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:21:53,007:INFO:discord.client: logging in using static token
+2024-01-23 22:21:54,144:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: ae4f9afaadd9e3b59e5f983beaf462c7).
+2024-01-23 22:21:58,194:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 22:21:58,196:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 106, in vouches
+    if embed.fields.len() == 0:
+AttributeError: 'list' object has no attribute 'len'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: AttributeError: 'list' object has no attribute 'len'
+2024-01-23 22:22:06,593:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:22:06,608:INFO:discord.client: logging in using static token
+2024-01-23 22:22:07,808:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: d082a08b1149acb1b53da5241cb8efe4).
+2024-01-23 22:22:11,215:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 22:22:11,218:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 106, in vouches
+    if embed.fields.len() == 0:
+AttributeError: 'list' object has no attribute 'len'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: AttributeError: 'list' object has no attribute 'len'
+2024-01-23 22:22:24,736:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:22:24,751:INFO:discord.client: logging in using static token
+2024-01-23 22:22:25,948:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: d52869a88eac937d30141bdacdd4bd27).
+2024-01-23 22:22:29,800:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 22:22:29,803:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 106, in vouches
+    if embed.fields.len() == 0:
+AttributeError: 'list' object has no attribute 'len'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: AttributeError: 'list' object has no attribute 'len'
+2024-01-23 22:24:44,199:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:24:44,212:INFO:discord.client: logging in using static token
+2024-01-23 22:24:45,376:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 26b588e6f970b463b524a12589977bd2).
+2024-01-23 22:24:48,914:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 22:24:48,916:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 103, in vouches
+    value=f"Concedido por {attributed_by_user.mention} por {Vouch.get_description(usuario.id, vouch_id)}",
+  File "D:\PyCharmProjects\Vouch Bot\vouch.py", line 33, in get_description
+    return int(Vouch.loaded_vouches[str(user_id)][vouch_id]["description"])
+ValueError: invalid literal for int() with base 10: 'teste'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: ValueError: invalid literal for int() with base 10: 'teste'
+2024-01-23 22:25:31,317:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:25:31,330:INFO:discord.client: logging in using static token
+2024-01-23 22:25:32,386:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 69e9a9b98a39f64e3aaa7ce6d9b0b87b).
+2024-01-23 22:25:38,751:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 22:25:38,753:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 104, in vouches
+    value=f"Concedido por {attributed_by_user.mention} por {Vouch.get_description(usuario.id, vouch_id)}",
+  File "D:\PyCharmProjects\Vouch Bot\vouch.py", line 33, in get_description
+    return int(Vouch.loaded_vouches[str(user_id)][vouch_id]["description"])
+ValueError: invalid literal for int() with base 10: 'teste'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: ValueError: invalid literal for int() with base 10: 'teste'
+2024-01-23 22:26:24,670:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:26:24,685:INFO:discord.client: logging in using static token
+2024-01-23 22:26:25,887:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 984fef4627dfb6c2081b1f7ec94eef67).
+2024-01-23 22:26:29,824:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 22:26:29,826:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 103, in vouches
+    value=f"Concedido por {attributed_by_user.mention} por {Vouch.get_description(usuario.id, vouch_id)}",
+  File "D:\PyCharmProjects\Vouch Bot\vouch.py", line 33, in get_description
+    return int(Vouch.loaded_vouches[str(user_id)][vouch_id]["description"])
+ValueError: invalid literal for int() with base 10: 'teste'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: ValueError: invalid literal for int() with base 10: 'teste'
+2024-01-23 22:27:05,922:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:27:05,937:INFO:discord.client: logging in using static token
+2024-01-23 22:27:07,096:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: cf595249237269aaed1279f05589d163).
+2024-01-23 22:27:16,150:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 22:27:16,153:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 98, in vouches
+    print(Vouch.get_description(usuario.id, vouch_id))
+  File "D:\PyCharmProjects\Vouch Bot\vouch.py", line 33, in get_description
+    return int(Vouch.loaded_vouches[str(user_id)][vouch_id]["description"])
+ValueError: invalid literal for int() with base 10: 'teste'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: ValueError: invalid literal for int() with base 10: 'teste'
+2024-01-23 22:28:15,032:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:28:15,039:INFO:discord.client: logging in using static token
+2024-01-23 22:28:16,206:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: d07c1a3985d310a23ca04fc66bcd34ea).
+2024-01-23 22:28:25,081:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 22:28:25,083:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 105, in vouches
+    if embed.fields.len() == 0:
+AttributeError: 'list' object has no attribute 'len'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: AttributeError: 'list' object has no attribute 'len'
+2024-01-23 22:28:55,962:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:28:55,985:INFO:discord.client: logging in using static token
+2024-01-23 22:28:57,205:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 74f40bd241f62364be79128c197ac4c4).
+2024-01-23 22:29:00,751:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 22:29:01,139:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 106, in vouches
+    if embed.fields.len() == 0:
+AttributeError: 'list' object has no attribute 'len'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: AttributeError: 'list' object has no attribute 'len'
+2024-01-23 22:31:36,887:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:31:36,901:INFO:discord.client: logging in using static token
+2024-01-23 22:31:38,194:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 8dded8e17384a1b6362cdfbf3522df54).
+2024-01-23 22:31:57,911:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 22:31:57,914:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 104, in vouches
+    if embed.fields.len() == 0:
+AttributeError: 'list' object has no attribute 'len'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: AttributeError: 'list' object has no attribute 'len'
+2024-01-23 22:32:21,952:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:32:21,966:INFO:discord.client: logging in using static token
+2024-01-23 22:32:23,084:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 197c7b5a27c48b5bc278730d0b631fb2).
+2024-01-23 22:32:26,691:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-23 22:32:50,501:INFO:discord: Command: /vouches shauuu_ Divisão 3 by shauuu_
+2024-01-23 22:32:50,922:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 117, in vouches
+    await ctx.response.send_message(embed=embed, ephemeral=True)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\interactions.py", line 774, in send_message
+    raise InteractionResponded(self._parent)
+discord.errors.InteractionResponded: This interaction has already been responded to before
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: InteractionResponded: This interaction has already been responded to before
+2024-01-23 22:44:58,416:INFO:discord: Command: /vouches diogotv_ Divisão 3 by diogotv_
+2024-01-23 22:45:20,312:INFO:discord: Command: /give_vouch diogotv_ teste by shauuu_
+2024-01-23 22:45:39,168:INFO:discord: Command: /promote diogotv_ Divisão 3 by shauuu_
+2024-01-23 22:45:39,523:ERROR:discord.app_commands.tree: Ignoring exception in command 'promote'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 140, in promote
+TypeError: convert_name_to_role() takes 1 positional argument but 2 were given
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'promote' raised an exception: TypeError: convert_name_to_role() takes 1 positional argument but 2 were given
+2024-01-23 22:45:55,620:INFO:discord: Command: /give_vouch diogotv_ teste by shauuu_
+2024-01-23 22:46:08,017:INFO:discord: Command: /vouches diogotv_ Divisão 2 by shauuu_
+2024-01-23 22:46:12,399:INFO:discord: Command: /vouches diogotv_ Divisão 3 by shauuu_
+2024-01-23 22:46:12,981:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 117, in vouches
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\interactions.py", line 774, in send_message
+    raise InteractionResponded(self._parent)
+discord.errors.InteractionResponded: This interaction has already been responded to before
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: InteractionResponded: This interaction has already been responded to before
+2024-01-23 22:46:29,187:INFO:discord: Command: /vouches diogotv_ Divisão 3 by diogotv_
+2024-01-23 22:46:29,565:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 117, in vouches
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\interactions.py", line 774, in send_message
+    raise InteractionResponded(self._parent)
+discord.errors.InteractionResponded: This interaction has already been responded to before
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: InteractionResponded: This interaction has already been responded to before
+2024-01-23 22:49:47,447:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:49:47,460:INFO:discord.client: logging in using static token
+2024-01-23 22:49:48,604:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 546a1c1dfbe57e1a26898b67f43922f3).
+2024-01-23 22:51:22,916:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:51:22,930:INFO:discord.client: logging in using static token
+2024-01-23 22:51:24,136:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: b3414c3ade56f37d49938c1af8676217).
+2024-01-23 22:51:40,963:INFO:discord: Command: /vouches diogotv_ Divisão 3 by shauuu_
+2024-01-23 22:51:45,679:INFO:discord: Command: /vouches diogotv_ Divisão 3 by diogotv_
+2024-01-23 22:52:14,263:INFO:discord: Command: /vouches diogotv_ Divisão 3 by diogotv_
+2024-01-23 22:52:20,911:INFO:discord: Command: /vouches diogotv_ Divisão 2 by shauuu_
+2024-01-23 22:52:57,987:INFO:discord: Command: /vouches diogotv_ Divisão 3 by shauuu_
+2024-01-23 22:53:50,650:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:53:50,664:INFO:discord.client: logging in using static token
+2024-01-23 22:53:51,771:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: c86c2ace9b5a38f732a9850d91d0c1b9).
+2024-01-23 22:54:06,441:INFO:discord: Command: /vouches diogotv_ Divisão 2 by diogotv_
+2024-01-23 22:54:34,062:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:54:34,078:INFO:discord.client: logging in using static token
+2024-01-23 22:54:35,189:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: f161fe2abb2cab9af90f52538f3ef2a8).
+2024-01-23 22:54:56,369:INFO:discord: Command: /vouches diogotv_ Divisão 2 by diogotv_
+2024-01-23 22:55:03,396:INFO:discord: Command: /vouches diogotv_ Divisão 1 by diogotv_
+2024-01-23 22:55:27,867:INFO:discord: Command: /promote shauuu_ Divisão 1 by shauuu_
+2024-01-23 22:57:19,370:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-23 22:57:19,383:INFO:discord.client: logging in using static token
+2024-01-23 22:57:20,491:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 908b7a890316449aabf66fe14e5b9d35).
+2024-01-23 22:57:25,081:INFO:discord: Command: /promote shauuu_ Divisão 1 by shauuu_

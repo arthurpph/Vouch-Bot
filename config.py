@@ -15,23 +15,26 @@ class Config:
 
     @staticmethod
     def get_casual_role_id():
-        return Config.loaded_config["casualRoleId"]
+        return int(Config.loaded_config["casualRoleId"])
 
     @staticmethod
     def get_div_roles_id():
         return [int(Config.loaded_config["div1RoleId"]),
                 int(Config.loaded_config["div2RoleId"]),
-                int(Config.loaded_config["div3RoleId"]),
-                int(Config.loaded_config["div4RoleId"])]
+                int(Config.loaded_config["div3RoleId"])]
+
+    @staticmethod
+    def get_div_role_id(div: int):
+        return int(Config.loaded_config[f"div{div}RoleId"])
 
     @staticmethod
     def get_div_log_channel_id(div: int):
-        return Config.loaded_config[f"div{str(div)}LogChannelId"]
+        return int(Config.loaded_config[f"div{str(div)}LogChannelId"])
 
     @staticmethod
     def get_promotions_channel_id():
-        return Config.loaded_config["promotionsChannelId"]
+        return int(Config.loaded_config["promotionsChannelId"])
 
     @staticmethod
     def get_council_duels_role_id():
-        return Config.loaded_config["councilDuelsRoleId"]
+        return int(Config.loaded_config["councilDuelsRoleId"])
