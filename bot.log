@@ -930,3 +930,612 @@ discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exce
 2024-01-23 22:57:19,383:INFO:discord.client: logging in using static token
 2024-01-23 22:57:20,491:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 908b7a890316449aabf66fe14e5b9d35).
 2024-01-23 22:57:25,081:INFO:discord: Command: /promote shauuu_ Divisão 1 by shauuu_
+2024-01-24 01:22:37,221:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 01:22:37,314:INFO:discord.client: logging in using static token
+2024-01-24 01:22:38,539:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 4e8b8702029980e997d8567e0989b1a9).
+2024-01-24 20:06:12,103:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 20:06:40,533:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 20:06:40,546:INFO:discord.client: logging in using static token
+2024-01-24 20:06:41,798:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 5c58342684090d493ce84280a103aa8e).
+2024-01-24 20:07:01,579:INFO:discord: Command: /disponivel Choice(name='4v4', value=4) by shauuu_
+2024-01-24 20:07:10,918:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by shauuu_
+2024-01-24 20:07:42,782:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 20:07:42,796:INFO:discord.client: logging in using static token
+2024-01-24 20:07:43,891:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: cb35f29d3d24603b8c06aec0fba70a88).
+2024-01-24 20:07:50,794:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by shauuu_
+2024-01-24 20:16:29,703:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 20:16:29,725:INFO:discord.client: logging in using static token
+2024-01-24 20:16:30,944:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: f84ac318da6a4b5a38698240c42836aa).
+2024-01-24 20:16:49,571:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by shauuu_
+2024-01-24 20:17:13,619:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 20:17:13,632:INFO:discord.client: logging in using static token
+2024-01-24 20:17:14,965:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 868cb5ab110f98c6224abf4969fb095e).
+2024-01-24 20:17:23,852:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by shauuu_
+2024-01-24 20:17:35,007:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 20:17:35,020:INFO:discord.client: logging in using static token
+2024-01-24 20:17:36,257:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: c264ac1e5c732785b52a702f7f0becb9).
+2024-01-24 20:17:46,653:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by shauuu_
+2024-01-24 20:23:30,042:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 20:23:30,076:INFO:discord.client: logging in using static token
+2024-01-24 20:23:31,154:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 6c26406026f4a771b8eba4de30a86d4f).
+2024-01-24 20:24:07,520:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by shauuu_
+2024-01-24 20:24:22,642:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 20:24:22,655:INFO:discord.client: logging in using static token
+2024-01-24 20:24:23,762:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: ccbd8ce78ac3a67c727613c32d9ccb37).
+2024-01-24 20:24:29,318:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by shauuu_
+2024-01-24 20:24:41,249:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 20:24:41,262:INFO:discord.client: logging in using static token
+2024-01-24 20:24:42,764:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 483765a819285ee94c8f415081ed615d).
+2024-01-24 20:24:46,722:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by shauuu_
+2024-01-24 20:24:55,880:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 20:24:55,895:INFO:discord.client: logging in using static token
+2024-01-24 20:24:57,018:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 5747e05aa0afeda0605e0108ea505e0f).
+2024-01-24 20:25:01,546:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by shauuu_
+2024-01-24 20:25:13,746:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 20:25:13,760:INFO:discord.client: logging in using static token
+2024-01-24 20:25:15,036:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 4942ce943dd2aac8923c2eca99ec1d4a).
+2024-01-24 20:25:17,334:WARNING:discord.http: We are being rate limited. PUT https://discord.com/api/v10/applications/1198496806124933190/commands responded with 429. Retrying in 8.77 seconds.
+2024-01-24 20:25:25,976:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by shauuu_
+2024-01-24 20:25:55,532:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 20:25:55,546:INFO:discord.client: logging in using static token
+2024-01-24 20:25:56,819:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: aa3f1b15307ad749ff7b241a4bac4c23).
+2024-01-24 20:26:06,727:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by shauuu_
+2024-01-24 20:26:52,906:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 20:26:52,921:INFO:discord.client: logging in using static token
+2024-01-24 20:26:54,023:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 04392c30c02bf861df77966e1fd43f71).
+2024-01-24 20:26:58,658:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by shauuu_
+2024-01-24 20:27:29,694:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 20:27:29,707:INFO:discord.client: logging in using static token
+2024-01-24 20:27:30,885:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 7adb9b334574f6c26bfbc6a704342bee).
+2024-01-24 20:27:39,851:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by shauuu_
+2024-01-24 20:27:51,383:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by shauuu_
+2024-01-24 20:29:42,065:INFO:discord: Command: /promote shauuu_ Divisão 1 by shauuu_
+2024-01-24 20:29:42,170:ERROR:discord.app_commands.tree: Ignoring exception in command 'promote'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 148, in promote
+    if not await check_permission(ctx):
+TypeError: object bool can't be used in 'await' expression
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'promote' raised an exception: TypeError: object bool can't be used in 'await' expression
+2024-01-24 20:32:53,919:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 20:32:53,934:INFO:discord.client: logging in using static token
+2024-01-24 20:32:55,214:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 8a6f9a4f617ca3978195f322f9cc89e6).
+2024-01-24 20:33:05,834:INFO:discord: Command: /promote shauuu_ Divisão 1 by shauuu_
+2024-01-24 20:43:15,520:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 20:43:15,538:INFO:discord.client: logging in using static token
+2024-01-24 20:43:16,655:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 270202e7a751dbf905dbeb239528e1e3).
+2024-01-24 20:43:28,145:INFO:discord: Command: /promote shauuu_ Divisão 2 by shauuu_
+2024-01-24 20:43:35,374:INFO:discord: Command: /promote shauuu_ Divisão 2 by shauuu_
+2024-01-24 20:43:36,050:ERROR:discord.app_commands.tree: Ignoring exception in command 'promote'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 183, in promote
+    await member.remove_roles(member_role)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\member.py", line 1096, in remove_roles
+    await req(guild_id, user_id, role.id, reason=reason)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\http.py", line 739, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'promote' raised an exception: Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+2024-01-24 20:43:50,919:INFO:discord: Command: /promote shauuu_ Divisão 3 by shauuu_
+2024-01-24 20:43:51,419:ERROR:discord.app_commands.tree: Ignoring exception in command 'promote'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 183, in promote
+    await member.remove_roles(member_role)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\member.py", line 1096, in remove_roles
+    await req(guild_id, user_id, role.id, reason=reason)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\http.py", line 739, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'promote' raised an exception: Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+2024-01-24 20:44:00,894:INFO:discord: Command: /promote shauuu_ Divisão 3 by shauuu_
+2024-01-24 20:44:01,364:ERROR:discord.app_commands.tree: Ignoring exception in command 'promote'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 183, in promote
+    await member.remove_roles(member_role)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\member.py", line 1096, in remove_roles
+    await req(guild_id, user_id, role.id, reason=reason)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\http.py", line 739, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'promote' raised an exception: Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+2024-01-24 20:44:39,419:INFO:discord: Command: /promote shauuu_ Divisão 2 by shauuu_
+2024-01-24 20:44:51,832:INFO:discord: Command: /promote shauuu_ Divisão 1 by shauuu_
+2024-01-24 20:44:57,832:INFO:discord: Command: /promote shauuu_ Divisão 1 by shauuu_
+2024-01-24 20:45:32,329:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 20:45:32,345:INFO:discord.client: logging in using static token
+2024-01-24 20:45:33,664:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: cd8b6f6187d37c9a43e6bb6c48dd1df2).
+2024-01-24 20:45:41,804:INFO:discord: Command: /promote shauuu_ Divisão 1 by shauuu_
+2024-01-24 20:45:48,439:INFO:discord: Command: /promote shauuu_ Divisão 2 by shauuu_
+2024-01-24 20:49:35,187:INFO:discord: Command: /promote shauuu_ Divisão 2 by shauuu_
+2024-01-24 20:49:47,710:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 20:49:47,739:INFO:discord.client: logging in using static token
+2024-01-24 20:49:49,074:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: cd4fce9d274fa718a5688869c29cb8fb).
+2024-01-24 20:49:53,683:INFO:discord: Command: /promote shauuu_ Divisão 2 by shauuu_
+2024-01-24 21:01:35,525:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 21:01:35,566:INFO:discord.client: logging in using static token
+2024-01-24 21:01:36,828:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 02808a4ac624614a2daaaa09b494fa88).
+2024-01-24 21:01:49,612:INFO:discord: Command: /promote shauuu_ Casual by shauuu_
+2024-01-24 21:02:22,626:INFO:discord: Command: /vouches shauuu_ Divisão 3 by shauuu_
+2024-01-24 21:02:29,364:INFO:discord: Command: /vouches shauuu_ Casual by shauuu_
+2024-01-24 21:02:32,920:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-24 21:05:27,381:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-24 21:07:20,023:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 21:07:20,042:INFO:discord.client: logging in using static token
+2024-01-24 21:07:21,170:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 50968028006af53b6905109add57fcf2).
+2024-01-24 21:07:26,591:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-24 21:07:36,426:INFO:discord: Command: /vouches shauuu_ Divisão 3 by shauuu_
+2024-01-24 21:07:36,429:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 117, in vouches
+    Vouch.get_division_at_the_insertion(usuario.id, vouch_id).split(" ")[1]):
+IndexError: list index out of range
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: IndexError: list index out of range
+2024-01-24 21:09:10,671:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 21:09:10,689:INFO:discord.client: logging in using static token
+2024-01-24 21:09:12,129:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: b5b5c822dddcabeee213da0d2b41f7f7).
+2024-01-24 21:09:15,895:INFO:discord: Command: /vouches shauuu_ Divisão 3 by shauuu_
+2024-01-24 21:09:15,898:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 118, in vouches
+    Vouch.get_division_at_the_insertion(usuario.id, vouch_id).split(" ")[1]):
+IndexError: list index out of range
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: IndexError: list index out of range
+2024-01-24 21:12:10,730:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 21:12:10,744:INFO:discord.client: logging in using static token
+2024-01-24 21:12:11,960:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 60b628ea49a0ac34729418da0beb85bd).
+2024-01-24 21:12:34,881:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 21:12:34,896:INFO:discord.client: logging in using static token
+2024-01-24 21:12:35,967:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: fb536430acbc0101fa8af4f88e54c281).
+2024-01-24 21:12:46,441:INFO:discord: Command: /vouches shauuu_ Divisão 3 by shauuu_
+2024-01-24 21:12:52,783:INFO:discord: Command: /vouches shauuu_ Casual by shauuu_
+2024-01-24 21:17:17,694:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 21:17:17,708:INFO:discord.client: logging in using static token
+2024-01-24 21:17:18,885:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 893c04843fa1719fac7b2e37e2e26ab4).
+2024-01-24 21:17:41,411:INFO:discord: Command: /promote shauuu_ Divisão 2 by shauuu_
+2024-01-24 21:18:54,950:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 21:18:54,965:INFO:discord.client: logging in using static token
+2024-01-24 21:18:56,110:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 3246c608b1778b26b311e0dd87e65610).
+2024-01-24 21:19:03,137:INFO:discord: Command: /promote shauuu_ Divisão 1 by shauuu_
+2024-01-24 21:19:06,463:ERROR:discord.app_commands.tree: Ignoring exception in command 'promote'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 199, in promote
+    await ctx.response.send_message(embed=embed, ephemeral=True)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\interactions.py", line 801, in send_message
+    await adapter.create_interaction_response(
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\webhook\async_.py", line 219, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'promote' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2024-01-24 21:20:56,921:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 21:20:56,935:INFO:discord.client: logging in using static token
+2024-01-24 21:20:58,050:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 0f512e4c0fe18d15ab4d5a727320c7a1).
+2024-01-24 21:21:10,477:INFO:discord: Command: /promote shauuu_ Divisão 2 by shauuu_
+2024-01-24 21:21:34,774:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 21:21:34,788:INFO:discord.client: logging in using static token
+2024-01-24 21:21:36,046:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: bd71dc82c949333b4f5970d5d25c7f5f).
+2024-01-24 21:21:43,385:INFO:discord: Command: /promote shauuu_ Divisão 1 by shauuu_
+2024-01-24 21:24:49,939:INFO:discord: Command: /promote shauuu_ Casual by shauuu_
+2024-01-24 21:25:39,738:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 21:25:39,789:INFO:discord.client: logging in using static token
+2024-01-24 21:25:41,020:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: ad9b43fa0fdc282a830bb8ec0af26fa8).
+2024-01-24 21:25:49,087:INFO:discord: Command: /promote shauuu_ Casual by shauuu_
+2024-01-24 21:25:54,180:INFO:discord: Command: /promote shauuu_ Divisão 1 by shauuu_
+2024-01-24 21:30:42,842:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 21:30:42,863:INFO:discord.client: logging in using static token
+2024-01-24 21:30:44,230:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 69d77ee3f3ca9fdff6e68967f474e986).
+2024-01-24 23:05:16,624:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-24 23:05:16,719:INFO:discord.client: logging in using static token
+2024-01-24 23:05:17,938:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 579d99583cad32506ad12a07b1240a63).
+2024-01-24 23:06:04,672:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-24 23:07:03,917:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-24 23:07:13,636:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-24 23:52:39,746:INFO:discord.gateway: Shard ID None has successfully RESUMED session 579d99583cad32506ad12a07b1240a63.
+2024-01-25 00:20:19,579:INFO:discord: Command: /vouches shauuu_ Divisão 2 by shauuu_
+2024-01-25 00:20:56,122:INFO:discord: Command: /give_vouch shauuu_ ser ruim by shauuu_
+2024-01-25 00:21:08,456:INFO:discord: Command: /vouches shauuu_ Divisão 2 by shauuu_
+2024-01-25 00:22:20,465:INFO:discord: Command: /vouches shauuu_ Divisão 3 by shauuu_
+2024-01-25 00:28:37,906:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 00:28:37,923:INFO:discord.client: logging in using static token
+2024-01-25 00:28:39,055:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: d3489a2de38baa8ae0936417910fd0cc).
+2024-01-25 00:28:49,393:INFO:discord: Command: /vouches shauuu_ Divisão 3 by shauuu_
+2024-01-25 00:28:49,393:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 116, in vouches
+    if current_division and current_division != "Casual" and int(current_division.split(" ")[1]) < int(rank.split(" ")[1]):
+AttributeError: 'Choice' object has no attribute 'split'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: AttributeError: 'Choice' object has no attribute 'split'
+2024-01-25 00:29:06,639:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 00:29:06,653:INFO:discord.client: logging in using static token
+2024-01-25 00:29:07,750:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 222c476d5c36acfb269ecea1ab7bde49).
+2024-01-25 00:29:11,837:INFO:discord: Command: /vouches shauuu_ Divisão 3 by shauuu_
+2024-01-25 00:29:11,837:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 116, in vouches
+    if current_division and current_division != "Casual" and int(current_division.split(" ")[1]) < int(rank.split(" ")[1]):
+AttributeError: 'Choice' object has no attribute 'split'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: AttributeError: 'Choice' object has no attribute 'split'
+2024-01-25 00:29:23,061:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 00:29:23,080:INFO:discord.client: logging in using static token
+2024-01-25 00:29:24,179:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 69e4e16c5cb7c5fd9e04159058ae0f03).
+2024-01-25 00:29:29,869:INFO:discord: Command: /vouches shauuu_ Divisão 3 by shauuu_
+2024-01-25 00:29:29,869:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 117, in vouches
+    if current_division and current_division != "Casual" and int(current_division.split(" ")[1]) < int(rank.split(" ")[1]):
+AttributeError: 'Choice' object has no attribute 'split'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: AttributeError: 'Choice' object has no attribute 'split'
+2024-01-25 00:29:39,965:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 00:29:39,979:INFO:discord.client: logging in using static token
+2024-01-25 00:29:41,020:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: edba1047e10a5a8608ed3c69f19af988).
+2024-01-25 00:29:50,537:INFO:discord: Command: /vouches shauuu_ Divisão 3 by shauuu_
+2024-01-25 00:29:50,538:ERROR:discord.app_commands.tree: Ignoring exception in command 'vouches'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 117, in vouches
+    if current_division and current_division != "Casual" and int(current_division.split(" ")[1]) < int(rank.split(" ")[1]):
+AttributeError: 'Choice' object has no attribute 'split'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'vouches' raised an exception: AttributeError: 'Choice' object has no attribute 'split'
+2024-01-25 00:30:11,976:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 00:30:11,990:INFO:discord.client: logging in using static token
+2024-01-25 00:30:13,049:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: afaadc761231d53921114383b5e5d2c9).
+2024-01-25 00:30:20,063:INFO:discord: Command: /vouches shauuu_ Divisão 3 by shauuu_
+2024-01-25 00:30:49,631:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 00:30:49,656:INFO:discord.client: logging in using static token
+2024-01-25 00:30:50,979:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: d34766fa88cea8992bcf01384c503153).
+2024-01-25 00:30:55,663:INFO:discord: Command: /vouches shauuu_ Divisão 3 by shauuu_
+2024-01-25 00:31:36,532:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 00:31:36,546:INFO:discord.client: logging in using static token
+2024-01-25 00:31:37,751:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 247a5e0a133429cb11b4e6e0a2725526).
+2024-01-25 00:31:48,784:INFO:discord: Command: /vouches shauuu_ Divisão 3 by shauuu_
+2024-01-25 00:31:52,396:INFO:discord: Command: /vouches shauuu_ Divisão 2 by shauuu_
+2024-01-25 00:31:55,431:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-25 00:32:22,541:INFO:discord: Command: /vouches shauuu_ Divisão 3 by shauuu_
+2024-01-25 00:32:26,373:INFO:discord: Command: /vouches shauuu_ Divisão 2 by shauuu_
+2024-01-25 00:32:33,557:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 00:32:33,564:INFO:discord.client: logging in using static token
+2024-01-25 00:32:34,628:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: e2497a609847ff9b62567c282bd262aa).
+2024-01-25 00:32:40,316:INFO:discord: Command: /vouches shauuu_ Divisão 2 by shauuu_
+2024-01-25 00:32:59,655:INFO:discord: Command: /vouches defender3415 Divisão 3 by shauuu_
+2024-01-25 01:25:15,522:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 01:25:15,536:INFO:discord.client: logging in using static token
+2024-01-25 01:25:16,649:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 0496197a006f498cff6fb8631fa2af35).
+2024-01-25 01:25:32,542:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-25 01:25:52,654:INFO:discord: Command: /promote shauuu_ Divisão 2 by shauuu_
+2024-01-25 01:26:22,973:INFO:discord: Command: /give_vouch shauuu_ teste2 by shauuu_
+2024-01-25 01:26:51,339:INFO:discord: Command: /give_vouch shauuu_ teste casual by shauuu_
+2024-01-25 01:33:41,481:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 01:33:41,507:INFO:discord.client: logging in using static token
+2024-01-25 01:33:42,559:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 07306c5ae6acfb0f8e1c1159a196a30a).
+2024-01-25 01:34:00,217:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-25 01:34:11,001:INFO:discord: Command: /vouches shauuu_ Divisão 3 by shauuu_
+2024-01-25 01:39:39,585:INFO:discord: Command: /give_vouch shauuu_ <@&1198707136427987055> by diogotv_
+2024-01-25 01:39:47,765:INFO:discord: Command: /vouches shauuu_ Divisão 3 by diogotv_
+2024-01-25 01:39:54,206:INFO:discord: Command: /vouches shauuu_ Divisão 3 by shauuu_
+2024-01-25 01:39:56,844:INFO:discord: Command: /vouches shauuu_ Divisão 2 by shauuu_
+2024-01-25 01:40:02,876:INFO:discord: Command: /vouches shauuu_ Divisão 2 by diogotv_
+2024-01-25 01:40:17,511:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 01:40:17,517:INFO:discord.client: logging in using static token
+2024-01-25 01:40:18,582:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: b600447077351a01f61a6a893b1b6c3d).
+2024-01-25 01:40:23,635:INFO:discord: Command: /vouches shauuu_ Divisão 2 by shauuu_
+2024-01-25 01:40:34,328:INFO:discord: Command: /vouches shauuu_ Divisão 3 by shauuu_
+2024-01-25 01:40:42,272:INFO:discord: Command: /vouches shauuu_ Divisão 2 by diogotv_
+2024-01-25 01:40:42,471:INFO:discord: Command: /vouches shauuu_ Divisão 2 by shauuu_
+2024-01-25 01:41:13,965:INFO:discord: Command: /vouches shauuu_ Divisão 3 by diogotv_
+2024-01-25 01:41:18,242:INFO:discord: Command: /vouches shauuu_ Divisão 3 by shauuu_
+2024-01-25 01:41:21,298:INFO:discord: Command: /vouches shauuu_ Divisão 2 by shauuu_
+2024-01-25 01:41:26,585:INFO:discord: Command: /vouches shauuu_ Divisão 2 by diogotv_
+2024-01-25 01:41:34,471:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 01:41:34,485:INFO:discord.client: logging in using static token
+2024-01-25 01:41:35,593:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: fcf30b6a48ea09aa4de9893b9f7f6299).
+2024-01-25 01:41:42,367:INFO:discord: Command: /vouches shauuu_ Divisão 2 by shauuu_
+2024-01-25 01:41:42,908:INFO:discord: Command: /vouches shauuu_ Divisão 2 by diogotv_
+2024-01-25 01:41:49,997:INFO:discord: Command: /vouches shauuu_ Divisão 3 by diogotv_
+2024-01-25 01:41:52,683:INFO:discord: Command: /vouches shauuu_ Divisão 3 by shauuu_
+2024-01-25 01:42:03,033:INFO:discord: Command: /give_vouch shauuu_ <@&1198707105780207736> by diogotv_
+2024-01-25 01:42:11,507:INFO:discord: Command: /vouches shauuu_ Divisão 2 by diogotv_
+2024-01-25 01:42:12,558:INFO:discord: Command: /vouches shauuu_ Divisão 2 by shauuu_
+2024-01-25 01:42:26,762:INFO:discord: Command: /vouches shauuu_ Divisão 3 by diogotv_
+2024-01-25 01:43:29,338:INFO:discord: Command: /vouches shauuu_ Divisão 1 by diogotv_
+2024-01-25 01:43:29,863:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-25 01:43:48,013:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 01:43:48,031:INFO:discord.client: logging in using static token
+2024-01-25 01:43:49,124:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: fbd3877de161d403503459fb161ecb32).
+2024-01-25 01:43:54,954:INFO:discord: Command: /vouches shauuu_ Divisão 2 by shauuu_
+2024-01-25 01:44:11,165:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 01:44:11,179:INFO:discord.client: logging in using static token
+2024-01-25 01:44:12,266:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: e59f88c2f01121fa37a24574b6e37992).
+2024-01-25 01:44:16,037:INFO:discord: Command: /promote shauuu_ Divisão 2 by diogotv_
+2024-01-25 01:44:16,541:INFO:discord: Command: /vouches shauuu_ Divisão 2 by shauuu_
+2024-01-25 01:44:19,381:ERROR:discord.app_commands.tree: Ignoring exception in command 'promote'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 188, in promote
+    await ctx.response.send_message(embed=embed, ephemeral=True)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\interactions.py", line 801, in send_message
+    await adapter.create_interaction_response(
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\webhook\async_.py", line 219, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'promote' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2024-01-25 01:44:34,411:INFO:discord: Command: /give_vouch shauuu_ <@&1198707078487883786> by diogotv_
+2024-01-25 01:44:42,901:INFO:discord: Command: /vouches shauuu_ Divisão 1 by diogotv_
+2024-01-25 01:44:49,495:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-25 01:44:51,694:INFO:discord: Command: /vouches shauuu_ Divisão 2 by diogotv_
+2024-01-25 01:51:55,710:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 01:51:55,716:INFO:discord.client: logging in using static token
+2024-01-25 01:51:57,099:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 3227ec172c103a5819277409385101f6).
+2024-01-25 02:02:10,431:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 02:02:10,444:INFO:discord.client: logging in using static token
+2024-01-25 02:02:11,488:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 0653a39e169a819efdf031cd30c9083f).
+2024-01-25 02:02:25,477:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by shauuu_
+2024-01-25 02:03:22,663:INFO:discord: Command: /disponivel Choice(name='2v2', value=2) by shauuu_
+2024-01-25 02:03:30,192:INFO:discord: Command: /disponivel Choice(name='2v2', value=2) by shauuu_
+2024-01-25 02:03:50,541:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 02:03:50,559:INFO:discord.client: logging in using static token
+2024-01-25 02:03:51,678:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 686e9314c679216c21d104fea93a1c21).
+2024-01-25 02:04:08,890:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by shauuu_
+2024-01-25 02:04:20,208:INFO:discord: Command: /disponivel Choice(name='3v3', value=3) by shauuu_
+2024-01-25 02:04:34,996:INFO:discord: Command: /disponivel Choice(name='4v4', value=4) by shauuu_
+2024-01-25 02:14:44,841:INFO:discord: Command: /promote shauuu_ Divisão 2 by shauuu_
+2024-01-25 02:14:45,290:ERROR:discord.app_commands.tree: Ignoring exception in command 'promote'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 181, in promote
+    await member.remove_roles(member_role)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\member.py", line 1096, in remove_roles
+    await req(guild_id, user_id, role.id, reason=reason)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\http.py", line 739, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'promote' raised an exception: Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+2024-01-25 02:15:23,551:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 02:15:23,564:INFO:discord.client: logging in using static token
+2024-01-25 02:15:24,754:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 9499366351d39a1c5f0ef37bbb214478).
+2024-01-25 02:15:29,327:INFO:discord: Command: /promote shauuu_ Divisão 2 by shauuu_
+2024-01-25 02:15:29,841:ERROR:discord.app_commands.tree: Ignoring exception in command 'promote'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 181, in promote
+    await member.remove_roles(member_role)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\member.py", line 1096, in remove_roles
+    await req(guild_id, user_id, role.id, reason=reason)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\http.py", line 739, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'promote' raised an exception: Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+2024-01-25 02:16:48,478:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 02:16:48,527:INFO:discord.client: logging in using static token
+2024-01-25 02:16:49,751:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: eb70126ed90c8566928e39764a57e40a).
+2024-01-25 02:16:53,693:INFO:discord: Command: /promote shauuu_ Divisão 2 by shauuu_
+2024-01-25 02:16:54,160:ERROR:discord.app_commands.tree: Ignoring exception in command 'promote'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 181, in promote
+    await member.remove_roles(member_role)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\member.py", line 1096, in remove_roles
+    await req(guild_id, user_id, role.id, reason=reason)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\http.py", line 739, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'promote' raised an exception: Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+2024-01-25 02:18:15,862:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 02:18:15,877:INFO:discord.client: logging in using static token
+2024-01-25 02:18:16,926:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: e8eb55c7757c8ef905397821c78c8c49).
+2024-01-25 02:18:21,480:INFO:discord: Command: /promote shauuu_ Divisão 2 by shauuu_
+2024-01-25 02:18:51,222:INFO:discord: Command: /promote shauuu_ Divisão 2 by shauuu_
+2024-01-25 02:19:16,891:INFO:discord: Command: /disponivel Choice(name='2v2', value=2) by shauuu_
+2024-01-25 02:24:35,168:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 02:24:35,182:INFO:discord.client: logging in using static token
+2024-01-25 02:24:36,301:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: b977effa934a7700be793a317b30e511).
+2024-01-25 02:24:48,902:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by shauuu_
+2024-01-25 02:25:23,468:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by diogotv_
+2024-01-25 02:26:02,883:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by diogotv_
+2024-01-25 02:26:08,660:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by shauuu_
+2024-01-25 02:26:25,187:INFO:discord: Command: /vouches diogotv_ Divisão 3 by diogotv_
+2024-01-25 02:26:40,539:INFO:discord: Command: /vouches shauuu_ Divisão 1 by shauuu_
+2024-01-25 02:27:48,631:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 02:27:48,647:INFO:discord.client: logging in using static token
+2024-01-25 02:27:49,761:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 79cc81dd504f741deec4f02f937434fd).
+2024-01-25 02:28:02,205:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by shauuu_
+2024-01-25 02:28:51,490:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 02:28:51,496:INFO:discord.client: logging in using static token
+2024-01-25 02:28:52,502:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 3705c34c58c3309931f0a5588e45af3d).
+2024-01-25 02:29:07,881:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by shauuu_
+2024-01-25 02:29:16,428:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 02:29:16,434:INFO:discord.client: logging in using static token
+2024-01-25 02:29:17,459:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: dfe6972695bf6097ab6945a9ef63b37a).
+2024-01-25 02:29:21,799:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by shauuu_
+2024-01-25 02:29:30,108:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by diogotv_
+2024-01-25 02:29:54,036:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by diogotv_
+2024-01-25 13:29:06,849:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 13:29:06,966:INFO:discord.client: logging in using static token
+2024-01-25 13:29:08,182:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 22dec1baca5e9c0d470be8732b385549).
+2024-01-25 13:29:28,662:INFO:discord: Command: /disponivel Choice(name='1v1', value=1) by shauuu_
+2024-01-25 13:34:05,539:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 13:34:05,558:INFO:discord.client: logging in using static token
+2024-01-25 13:34:06,673:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: e253b52f88e136f930e9253119b41b5e).
+2024-01-25 13:41:39,167:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 13:41:39,185:INFO:discord.client: logging in using static token
+2024-01-25 13:41:40,335:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 6b598f40b3557fbd41467fe0c6414686).
+2024-01-25 13:42:11,087:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 13:42:11,101:INFO:discord.client: logging in using static token
+2024-01-25 13:42:12,255:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 9ebacfbbd71cc980a02e1f3035986207).
+2024-01-25 13:42:21,684:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 13:42:21,697:INFO:discord.client: logging in using static token
+2024-01-25 13:42:22,749:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 82d1530f881315b5ea716b7321e36a7f).
+2024-01-25 13:42:37,335:INFO:discord: Command: /purge diogotv_ by shauuu_
+2024-01-25 13:42:52,567:INFO:discord: Command: /purge diogotv_ by shauuu_

@@ -35,6 +35,8 @@ def convert_name_to_role(name):
         role_id = Config.get_div_role_id(2)
     elif name == "Divisao 3":
         role_id = Config.get_div_role_id(3)
+    elif name == "Casual":
+        role_id = Config.get_casual_role_id()
     else:
         return None
 
@@ -43,6 +45,7 @@ def convert_name_to_role(name):
 
 def convert_role_to_name(member: Member):
     div_roles = Config.get_div_roles_id()
+    casual_role = Config.get_casual_role_id()
 
     for role in member.roles:
         if role.id in div_roles:
@@ -54,5 +57,7 @@ def convert_role_to_name(member: Member):
                 return "Divisao 3"
             else:
                 return None
+        elif role.id == casual_role:
+            return "Casual"
 
     return None

@@ -1,24 +1,2 @@
 {
-   "395546295940415510": {
-      "1": {
-         "description": "teste",
-         "attributed_by": "395546295940415510",
-         "date": "2024-01-23 21:47:58",
-         "division_at_the_insertion": "Divisao 1"
-      },
-      "2": {
-         "description": "teste",
-         "attributed_by": "395546295940415510",
-         "date": "2024-01-23 22:15:51",
-         "division_at_the_insertion": "Divisao 3"
-      }
-   },
-   "726245834567712839": {
-      "1": {
-         "description": "teste",
-         "attributed_by": "395546295940415510",
-         "date": "2024-01-23 22:45:55",
-         "division_at_the_insertion": "Divisao 3"
-      }
-   }
 }

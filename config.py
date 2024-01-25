@@ -24,12 +24,22 @@ class Config:
                 int(Config.loaded_config["div3RoleId"])]
 
     @staticmethod
+    def get_div_council_roles_id():
+        return [int(Config.loaded_config["div1CouncilRoleId"]),
+                int(Config.loaded_config["div2CouncilRoleId"]),
+                int(Config.loaded_config["div3CouncilRoleId"])]
+
+    @staticmethod
+    def get_staff_roles_id():
+        return list(map(int, Config.loaded_config["staffRoles"]))
+
+    @staticmethod
     def get_div_role_id(div: int):
         return int(Config.loaded_config[f"div{div}RoleId"])
 
     @staticmethod
-    def get_div_log_channel_id(div: int):
-        return int(Config.loaded_config[f"div{str(div)}LogChannelId"])
+    def get_div_council_role_id(div: int):
+        return int(Config.loaded_config[f"div{div}CouncilRoleId"])
 
     @staticmethod
     def get_promotions_channel_id():

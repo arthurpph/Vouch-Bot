@@ -1,13 +1,16 @@
+import discord
 import os
 import json
 from datetime import datetime
+
+from utils import convert_role_to_name
 
 
 class Vouch:
     file_path = None
     loaded_vouches = None
     backup_data = None
-    vouch_keys = ["description", "attributed_by", "date", "division_at_the_insertion"]
+    vouch_keys = ["vouch", "description", "attributed_by", "date"]
 
     @staticmethod
     def load_vouches():
@@ -47,11 +50,11 @@ class Vouch:
         return Vouch.loaded_vouches[str(user_id)][vouch_id]["date"]
 
     @staticmethod
-    def get_division_at_the_insertion(user_id: int, vouch_id: str):
+    def get_vouch(user_id: int, vouch_id: str):
         if not Vouch._check_keys(user_id, vouch_id):
             return None
 
-        return Vouch.loaded_vouches[str(user_id)][vouch_id]["division_at_the_insertion"]
+        return Vouch.loaded_vouches[str(user_id)][vouch_id]["vouch"]
 
     @staticmethod
     def user_has_vouches(user_id: int):
@@ -61,15 +64,20 @@ class Vouch:
         return False
 
     @staticmethod
-    def add_vouch(user_id: int, description: str, attributed_by_user_id: int, current_division: str):
-        user_vouches = Vouch.loaded_vouches.get(str(user_id))
+    def add_vouch(user: discord.User, description: str, attributed_by_user_id: int):
+        user_vouches = Vouch.loaded_vouches.get(str(user.id))
 
         if not user_vouches:
             last_key = 0
         else:
             last_key = int(list(user_vouches.keys())[-1])
 
-        Vouch._add_vouch_keys(user_id, last_key + 1, description, attributed_by_user_id, current_division)
+        vouch = Vouch._get_vouch_name(user)
+        if not vouch:
+            print("Error: _get_vouch_name returned None")
+            return
+
+        Vouch._add_vouch_keys(user.id, last_key + 1, vouch, description, attributed_by_user_id)
 
     @staticmethod
     def _check_keys(user_id: int, vouch_id: str):
@@ -84,7 +92,21 @@ class Vouch:
         return True
 
     @staticmethod
-    def _add_vouch_keys(user_id: int, vouch_id: int, description: str, attributed_by: int, current_division: str):
+    def _get_vouch_name(user):
+        role_name = convert_role_to_name(user)
+        if role_name == "Divisao 1":
+            return "Divisao 1A"
+        elif role_name == "Divisao 2":
+            return "Divisao 1"
+        elif role_name == "Divisao 3":
+            return "Divisao 2"
+        elif role_name == "Casual":
+            return "Divisao 3"
+        else:
+            return None
+
+    @staticmethod
+    def _add_vouch_keys(user_id: int, vouch_id: int, vouch: str, description: str, attributed_by: int):
         try:
             Vouch._save_backup()
 
@@ -94,10 +116,10 @@ class Vouch:
                     Vouch.loaded_vouches[user_id_str] = {}
 
                 Vouch.loaded_vouches[user_id_str][str(vouch_id)] = {
-                    Vouch.vouch_keys[0]: description,
-                    Vouch.vouch_keys[1]: str(attributed_by),
-                    Vouch.vouch_keys[2]: datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                    Vouch.vouch_keys[3]: current_division
+                    Vouch.vouch_keys[0]: vouch,
+                    Vouch.vouch_keys[1]: description,
+                    Vouch.vouch_keys[2]: str(attributed_by),
+                    Vouch.vouch_keys[3]: datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                 }
 
                 file.truncate(0)
