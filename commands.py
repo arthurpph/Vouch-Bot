@@ -91,6 +91,10 @@ class Commands(commands.Cog):
     async def delete_vouch(self, ctx: commands.Context, usuario: User, rank: app_commands.Choice[int]):
         logger.info(f"Command: /delete_vouch {usuario} {rank.name} by {ctx.user.name}")
 
+        if not check_permission_only_staff(ctx):
+            await ctx.response.send_message(embed=Embed(color=discord.Color.blue(), description="Você não tem permissão para executar isso!"), ephemeral=True)
+            return
+
         await ctx.response.send_message(view=delete_vouch.DeleteVouchView(ctx.guild, usuario.id, rank.name), ephemeral=True)
 
     @app_commands.command(name="vouches", description="Mostra os vouches de um jogador")

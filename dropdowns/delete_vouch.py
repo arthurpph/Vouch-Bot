@@ -49,31 +49,3 @@ class DeleteVouchView(discord.ui.View):
     def __init__(self, guild: Guild, user_id: int, rank_name: str):
         super().__init__()
         self.add_item(deleteVouchDropdown(guild, user_id, rank_name))
-
-
-def delete_vouch_dropdown(guild: Guild, user_id: int, rank_name: str):
-    formatted_rank = rank_name.replace("ã", "a")
-
-    counter = "0"
-    options = []
-    for vouch_id in Vouch.get_user_vouches(user_id):
-        if Vouch.get_vouch(user_id, vouch_id) == formatted_rank:
-            member = guild.get_member(Vouch.get_attributed_by(user_id, vouch_id))
-            date = Vouch.get_date(user_id, vouch_id)
-
-            options.append(
-                SelectOption(label=f"Atribuido por {'Usuário não encontrado' if not member else member.name}",
-                             value=counter,
-                             description=f"Data: {get_date_from_string_date(date)} as {get_time_from_string_date(date)}"))
-
-        counter = str(int(counter) + 1)
-
-    if len(options) == 0:
-        return None
-
-    select_instance = Select(placeholder="Escolha um vouch", options=options)
-
-    view = discord.ui.View()
-    view.add_item(select_instance)
-
-    return view
