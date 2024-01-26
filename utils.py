@@ -1,11 +1,12 @@
 import discord
-from discord import Role, Member
+from discord import Member
 
 from datetime import datetime
 
 from config import Config
 
 data_format = "%Y-%m-%d %H:%M:%S"
+brazilian_date_format = "%d/%m/%Y"
 
 
 def convert_data_to_discord_format(string_date: str):
@@ -14,6 +15,14 @@ def convert_data_to_discord_format(string_date: str):
     data_discord = discord.utils.format_dt(data_object, style="f")
 
     return data_discord
+
+
+def get_date_from_string_date(string_date: str):
+    return datetime.strptime(string_date, data_format).date()
+
+
+def get_time_from_string_date(string_date: str):
+    return datetime.strptime(string_date, data_format).time()
 
 
 def get_past_time_in_months(string_date: str):

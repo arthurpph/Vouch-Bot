@@ -8,6 +8,7 @@ from vouch import Vouch
 from utils import convert_data_to_discord_format, get_past_time_in_months, convert_name_to_role, convert_role_to_name
 from logger import get_logger
 from exceptions import InsufficientPermission, InvalidChannelId, InvalidUser, InvalidRole
+from dropdowns import delete_vouch
 
 logger = get_logger()
 
@@ -80,8 +81,20 @@ class Commands(commands.Cog):
         embed = Embed(color=discord.Color.blue(), description="Vouch adicionado!")
         await ctx.response.send_message(embed=embed, ephemeral=True)
 
+    @app_commands.command(name="delete_vouch", description="Deleta um vouch de um jogador")
+    @app_commands.describe(usuario="Escolha o usuário", rank="Escolha um rank")
+    @app_commands.choices(rank=[
+        app_commands.Choice(name="Divisão 1", value=1),
+        app_commands.Choice(name="Divisão 2", value=2),
+        app_commands.Choice(name="Divisão 3", value=3),
+    ])
+    async def delete_vouch(self, ctx: commands.Context, usuario: User, rank: app_commands.Choice[int]):
+        logger.info(f"Command: /delete_vouch {usuario} {rank.name} by {ctx.user.name}")
+
+        await ctx.response.send_message(view=delete_vouch.DeleteVouchView(ctx.guild, usuario.id, rank.name), ephemeral=True)
+
     @app_commands.command(name="vouches", description="Mostra os vouches de um jogador")
-    @app_commands.describe(usuario="Escolha o usuário", rank="Ranks disponíveis")
+    @app_commands.describe(usuario="Escolha o usuário", rank="Escolha um rank")
     @app_commands.choices(rank=[
         app_commands.Choice(name="Divisão 1", value=1),
         app_commands.Choice(name="Divisão 2", value=2),

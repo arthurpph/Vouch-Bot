@@ -1539,3 +1539,608 @@ discord.app_commands.errors.CommandInvokeError: Command 'promote' raised an exce
 2024-01-25 13:42:22,749:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 82d1530f881315b5ea716b7321e36a7f).
 2024-01-25 13:42:37,335:INFO:discord: Command: /purge diogotv_ by shauuu_
 2024-01-25 13:42:52,567:INFO:discord: Command: /purge diogotv_ by shauuu_
+2024-01-25 16:24:07,090:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 16:24:07,222:INFO:discord.client: logging in using static token
+2024-01-25 16:24:08,630:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 35c194751c9988a5f32a8335b339ad3b).
+2024-01-25 16:24:13,868:INFO:discord: Command: /purge shauuu_ by shauuu_
+2024-01-25 16:24:14,106:ERROR:discord.app_commands.tree: Ignoring exception in command 'purge'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 223, in purge
+    if not check_permission_only_staff(ctx):
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 304, in check_permission_only_staff
+    if any(role.id in list for list in staff_roles):
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 304, in <genexpr>
+    if any(role.id in list for list in staff_roles):
+TypeError: argument of type 'int' is not iterable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'purge' raised an exception: TypeError: argument of type 'int' is not iterable
+2024-01-25 16:26:59,105:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-25 16:26:59,118:INFO:discord.client: logging in using static token
+2024-01-25 16:27:00,425:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: d1ed374111074ebfbe3346e32201118d).
+2024-01-25 16:27:17,600:INFO:discord: Command: /purge diogotv_ by shauuu_
+2024-01-25 16:27:34,641:INFO:discord: Command: /promote shauuu_ Divisão 3 by shauuu_
+2024-01-25 16:27:58,634:INFO:discord: Command: /purge shauuu_ by shauuu_
+2024-01-26 13:03:27,832:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:03:27,967:INFO:discord.client: logging in using static token
+2024-01-26 13:03:29,121:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 8cdbcb51e27f1c3b6175f8c6be00e5bb).
+2024-01-26 13:03:59,603:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:03:59,618:INFO:discord.client: logging in using static token
+2024-01-26 13:04:00,870:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: e360ea38b547ce31eddf4c87605506e6).
+2024-01-26 13:04:24,107:INFO:discord: Command: /delete_vouch shauuu_ Divisão 2 by shauuu_
+2024-01-26 13:04:24,107:ERROR:discord.app_commands.tree: Ignoring exception in command 'delete_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 94, in delete_vouch
+    dropdown = delete_vouch.delete_vouch_dropdown(usuario.id, rank.name)
+  File "D:\PyCharmProjects\Vouch Bot\dropdowns\delete_vouch.py", line 24, in delete_vouch_dropdown
+    view.add_item(select_instance)
+AttributeError: module 'discord.ui.view' has no attribute 'add_item'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'delete_vouch' raised an exception: AttributeError: module 'discord.ui.view' has no attribute 'add_item'
+2024-01-26 13:04:41,562:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:04:41,579:INFO:discord.client: logging in using static token
+2024-01-26 13:04:42,836:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: e5c191b48138e537f7e84bc7c6ff15d0).
+2024-01-26 13:04:48,040:INFO:discord: Command: /delete_vouch shauuu_ Divisão 2 by shauuu_
+2024-01-26 13:04:48,040:ERROR:discord.app_commands.tree: Ignoring exception in command 'delete_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 94, in delete_vouch
+    dropdown = delete_vouch.delete_vouch_dropdown(usuario.id, rank.name)
+  File "D:\PyCharmProjects\Vouch Bot\dropdowns\delete_vouch.py", line 24, in delete_vouch_dropdown
+    view.add_item(select_instance)
+AttributeError: module 'discord.ui.view' has no attribute 'add_item'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'delete_vouch' raised an exception: AttributeError: module 'discord.ui.view' has no attribute 'add_item'
+2024-01-26 13:04:56,669:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:04:56,686:INFO:discord.client: logging in using static token
+2024-01-26 13:04:58,007:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: b558a1213ac6452c1bed7918640e538d).
+2024-01-26 13:05:03,626:INFO:discord: Command: /delete_vouch shauuu_ Divisão 2 by shauuu_
+2024-01-26 13:05:03,626:ERROR:discord.app_commands.tree: Ignoring exception in command 'delete_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 94, in delete_vouch
+    dropdown = delete_vouch.delete_vouch_dropdown(usuario.id, rank.name)
+  File "D:\PyCharmProjects\Vouch Bot\dropdowns\delete_vouch.py", line 24, in delete_vouch_dropdown
+    view.add_item(select_instance)
+AttributeError: module 'discord.ui.view' has no attribute 'add_item'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'delete_vouch' raised an exception: AttributeError: module 'discord.ui.view' has no attribute 'add_item'
+2024-01-26 13:05:11,559:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:05:11,575:INFO:discord.client: logging in using static token
+2024-01-26 13:05:12,603:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 8afa4b0f2e54cf1a5113dffa878323e0).
+2024-01-26 13:05:15,060:WARNING:discord.http: We are being rate limited. PUT https://discord.com/api/v10/applications/1198496806124933190/commands responded with 429. Retrying in 0.30 seconds.
+2024-01-26 13:05:36,841:INFO:discord: Command: /delete_vouch seizoo Divisão 3 by shauuu_
+2024-01-26 13:05:36,841:ERROR:discord.app_commands.tree: Ignoring exception in command 'delete_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 94, in delete_vouch
+    dropdown = delete_vouch.delete_vouch_dropdown(usuario.id, rank.name)
+  File "D:\PyCharmProjects\Vouch Bot\dropdowns\delete_vouch.py", line 24, in delete_vouch_dropdown
+    view.add_item(select_instance)
+AttributeError: module 'discord.ui.view' has no attribute 'add_item'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'delete_vouch' raised an exception: AttributeError: module 'discord.ui.view' has no attribute 'add_item'
+2024-01-26 13:06:18,724:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:06:18,742:INFO:discord.client: logging in using static token
+2024-01-26 13:06:19,759:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 5759cd0bb00e1f75d7837a8e1b328523).
+2024-01-26 13:06:33,884:INFO:discord: Command: /delete_vouch seizoo Divisão 3 by shauuu_
+2024-01-26 13:06:33,979:ERROR:discord.app_commands.tree: Ignoring exception in command 'delete_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 94, in delete_vouch
+    dropdown = delete_vouch.delete_vouch_dropdown(usuario.id, rank.name)
+  File "D:\PyCharmProjects\Vouch Bot\dropdowns\delete_vouch.py", line 24, in delete_vouch_dropdown
+    view.add_item(select_instance)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\ui\view.py", line 324, in add_item
+    raise TypeError(f'expected Item not {item.__class__.__name__}')
+TypeError: expected Item not function
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'delete_vouch' raised an exception: TypeError: expected Item not function
+2024-01-26 13:06:47,314:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:06:47,327:INFO:discord.client: logging in using static token
+2024-01-26 13:06:48,414:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 0a9390f1ee41b254609e23ad67ff7bd4).
+2024-01-26 13:06:54,416:INFO:discord: Command: /delete_vouch seizoo Divisão 3 by shauuu_
+2024-01-26 13:06:54,616:ERROR:discord.app_commands.tree: Ignoring exception in command 'delete_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 97, in delete_vouch
+    await ctx.response.send_message("Escolha um vouch:", view=dropdown, ephemeral=True)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\interactions.py", line 801, in send_message
+    await adapter.create_interaction_response(
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\webhook\async_.py", line 221, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In data.components.0.components.0.options: This field is required
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'delete_vouch' raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In data.components.0.components.0.options: This field is required
+2024-01-26 13:07:10,011:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:07:10,028:INFO:discord.client: logging in using static token
+2024-01-26 13:07:11,277:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 38aafe3fa98b46c7ebd9ccb7a3e61a12).
+2024-01-26 13:07:30,100:INFO:discord: Command: /delete_vouch 1imo Divisão 3 by shauuu_
+2024-01-26 13:07:30,332:ERROR:discord.app_commands.tree: Ignoring exception in command 'delete_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 97, in delete_vouch
+    await ctx.response.send_message("Escolha um vouch:", view=dropdown, ephemeral=True)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\interactions.py", line 801, in send_message
+    await adapter.create_interaction_response(
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\webhook\async_.py", line 221, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In data.components.0.components.0.options: This field is required
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'delete_vouch' raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In data.components.0.components.0.options: This field is required
+2024-01-26 13:07:45,118:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:07:45,132:INFO:discord.client: logging in using static token
+2024-01-26 13:07:46,228:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: e9ebfe2240d33f62c12020a4028d34b2).
+2024-01-26 13:07:51,094:INFO:discord: Command: /delete_vouch 1imo Divisão 3 by shauuu_
+2024-01-26 13:07:51,286:ERROR:discord.app_commands.tree: Ignoring exception in command 'delete_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 97, in delete_vouch
+    await ctx.response.send_message("Escolha um vouch:", view=dropdown, ephemeral=True)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\interactions.py", line 801, in send_message
+    await adapter.create_interaction_response(
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\webhook\async_.py", line 221, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In data.components.0.components.0.options: This field is required
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'delete_vouch' raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In data.components.0.components.0.options: This field is required
+2024-01-26 13:08:16,048:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:08:16,062:INFO:discord.client: logging in using static token
+2024-01-26 13:08:17,147:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 92b32e3e5754bb44d5f031ab5f0a1a45).
+2024-01-26 13:08:22,733:INFO:discord: Command: /delete_vouch 1imo Divisão 3 by shauuu_
+2024-01-26 13:08:22,733:ERROR:discord.app_commands.tree: Ignoring exception in command 'delete_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 94, in delete_vouch
+    dropdown = delete_vouch.delete_vouch_dropdown(usuario.id, rank.name)
+  File "D:\PyCharmProjects\Vouch Bot\dropdowns\delete_vouch.py", line 22, in delete_vouch_dropdown
+    print(options.children)
+AttributeError: 'list' object has no attribute 'children'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'delete_vouch' raised an exception: AttributeError: 'list' object has no attribute 'children'
+2024-01-26 13:08:31,874:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:08:31,888:INFO:discord.client: logging in using static token
+2024-01-26 13:08:33,066:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: d88d816275577dbdf7aba363fa505141).
+2024-01-26 13:08:39,988:INFO:discord: Command: /delete_vouch 1imo Divisão 3 by shauuu_
+2024-01-26 13:08:40,214:ERROR:discord.app_commands.tree: Ignoring exception in command 'delete_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 97, in delete_vouch
+    await ctx.response.send_message("Escolha um vouch:", view=dropdown, ephemeral=True)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\interactions.py", line 801, in send_message
+    await adapter.create_interaction_response(
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\webhook\async_.py", line 221, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In data.components.0.components.0.options: This field is required
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'delete_vouch' raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In data.components.0.components.0.options: This field is required
+2024-01-26 13:09:07,999:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:09:08,013:INFO:discord.client: logging in using static token
+2024-01-26 13:09:09,163:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 5350338e1eeb771f4212c25981a71fbe).
+2024-01-26 13:09:15,903:INFO:discord: Command: /delete_vouch 1imo Divisão 3 by shauuu_
+2024-01-26 13:09:16,113:ERROR:discord.app_commands.tree: Ignoring exception in command 'delete_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 97, in delete_vouch
+    await ctx.response.send_message("Escolha um vouch:", view=dropdown, ephemeral=True)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\interactions.py", line 801, in send_message
+    await adapter.create_interaction_response(
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\webhook\async_.py", line 221, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In data.components.0.components.0.options: This field is required
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'delete_vouch' raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In data.components.0.components.0.options: This field is required
+2024-01-26 13:09:38,076:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 13:11:29,511:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:11:29,525:INFO:discord.client: logging in using static token
+2024-01-26 13:11:30,637:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 16485d113b160063bed45f7ec4743c37).
+2024-01-26 13:11:41,693:INFO:discord: Command: /delete_vouch seizoo Divisão 2 by shauuu_
+2024-01-26 13:11:42,116:ERROR:discord.app_commands.tree: Ignoring exception in command 'delete_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 97, in delete_vouch
+    await ctx.response.send_message("Escolha um vouch:", view=dropdown, ephemeral=True)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\interactions.py", line 810, in send_message
+    if view is not MISSING and not view.is_finished():
+AttributeError: 'NoneType' object has no attribute 'is_finished'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'delete_vouch' raised an exception: AttributeError: 'NoneType' object has no attribute 'is_finished'
+2024-01-26 13:12:11,197:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 13:12:11,197:ERROR:discord.app_commands.tree: Ignoring exception in command 'delete_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 94, in delete_vouch
+    dropdown = delete_vouch.delete_vouch_dropdown(usuario.id, rank.name)
+  File "D:\PyCharmProjects\Vouch Bot\dropdowns\delete_vouch.py", line 19, in delete_vouch_dropdown
+    SelectOption(label=f"Atribuido por {Vouch.get_attributed_by(user_id, vouch_id).mention}", value=counter,
+AttributeError: 'int' object has no attribute 'mention'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'delete_vouch' raised an exception: AttributeError: 'int' object has no attribute 'mention'
+2024-01-26 13:12:19,842:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:12:19,857:INFO:discord.client: logging in using static token
+2024-01-26 13:12:20,964:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: b8a6e886ed05054bd2bdf41ede6c0715).
+2024-01-26 13:12:25,554:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 13:13:24,045:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:13:24,067:INFO:discord.client: logging in using static token
+2024-01-26 13:13:25,253:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: c079667c84a1315cf35cb343d07eed08).
+2024-01-26 13:13:36,105:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 13:14:05,831:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:14:05,845:INFO:discord.client: logging in using static token
+2024-01-26 13:14:06,931:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 2827cfdad839c10c2e297eefa13f8c98).
+2024-01-26 13:14:13,810:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 13:22:57,709:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:22:57,811:INFO:discord.client: logging in using static token
+2024-01-26 13:22:59,069:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 920df2c7d82353b1da880f8ae999b6d8).
+2024-01-26 13:23:23,216:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 13:25:42,315:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:25:42,335:INFO:discord.client: logging in using static token
+2024-01-26 13:25:43,483:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 36387e15927c202114394e7557238424).
+2024-01-26 13:25:51,599:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 13:27:42,851:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:27:42,866:INFO:discord.client: logging in using static token
+2024-01-26 13:27:43,963:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 0910cca906987ba96bea82ec2a90e19b).
+2024-01-26 13:27:50,225:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 13:29:48,147:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:29:48,161:INFO:discord.client: logging in using static token
+2024-01-26 13:29:49,234:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: a3458f68f5df66d7acb1d8f8f91932f8).
+2024-01-26 13:29:53,707:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 13:29:53,709:ERROR:discord.app_commands.tree: Ignoring exception in command 'delete_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 94, in delete_vouch
+    dropdown = delete_vouch.delete_vouch_dropdown(ctx.guild, usuario.id, rank.name)
+  File "D:\PyCharmProjects\Vouch Bot\dropdowns\delete_vouch.py", line 24, in delete_vouch_dropdown
+    description=f"Data: {get_date_from_string_date(date)} as {get_time_from_string_date(date)}"))
+  File "D:\PyCharmProjects\Vouch Bot\utils.py", line 21, in get_date_from_string_date
+    return datetime.strptime(string_date, data_format).strftime(brazilian_date_format).date()
+AttributeError: 'str' object has no attribute 'date'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'delete_vouch' raised an exception: AttributeError: 'str' object has no attribute 'date'
+2024-01-26 13:30:05,704:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 13:30:05,705:ERROR:discord.app_commands.tree: Ignoring exception in command 'delete_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 94, in delete_vouch
+    dropdown = delete_vouch.delete_vouch_dropdown(ctx.guild, usuario.id, rank.name)
+  File "D:\PyCharmProjects\Vouch Bot\dropdowns\delete_vouch.py", line 24, in delete_vouch_dropdown
+    description=f"Data: {get_date_from_string_date(date)} as {get_time_from_string_date(date)}"))
+  File "D:\PyCharmProjects\Vouch Bot\utils.py", line 21, in get_date_from_string_date
+    return datetime.strptime(string_date, data_format).strftime(brazilian_date_format).date()
+AttributeError: 'str' object has no attribute 'date'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'delete_vouch' raised an exception: AttributeError: 'str' object has no attribute 'date'
+2024-01-26 13:30:23,065:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:30:23,072:INFO:discord.client: logging in using static token
+2024-01-26 13:30:24,265:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 0eec86ae146bb3f4fd9c625e464659ec).
+2024-01-26 13:30:29,410:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 13:32:44,207:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:32:44,225:INFO:discord.client: logging in using static token
+2024-01-26 13:32:45,502:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 2ea4afcee3bf6b4e5b3f2c2e0d1eeab7).
+2024-01-26 13:32:50,147:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 13:33:07,847:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:33:07,871:INFO:discord.client: logging in using static token
+2024-01-26 13:33:09,013:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 41e12d2f960a86babf568902cbfc2467).
+2024-01-26 13:33:18,666:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 13:33:23,571:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 13:34:09,917:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:34:09,945:INFO:discord.client: logging in using static token
+2024-01-26 13:34:11,131:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 551d1c98e7233ba10cf28b98efbba8cf).
+2024-01-26 13:34:16,276:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 13:45:50,167:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:45:50,185:INFO:discord.client: logging in using static token
+2024-01-26 13:45:51,231:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 77d20dbb09b710b9515e769011ce67ff).
+2024-01-26 13:46:24,784:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 13:46:44,256:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 13:48:34,701:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:48:34,714:INFO:discord.client: logging in using static token
+2024-01-26 13:48:35,960:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 3ef50948eebe8e0203640c1dc3d57854).
+2024-01-26 13:48:41,202:INFO:discord: Command: /vouches shauuu_ Divisão 2 by shauuu_
+2024-01-26 13:48:49,527:INFO:discord: Command: /delete_vouch shauuu_ Divisão 2 by shauuu_
+2024-01-26 13:49:12,973:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:49:12,994:INFO:discord.client: logging in using static token
+2024-01-26 13:49:14,262:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 46e0176b2da65e97bb8bdaaa3df79af4).
+2024-01-26 13:49:23,563:INFO:discord: Command: /delete_vouch shauuu_ Divisão 2 by shauuu_
+2024-01-26 13:54:57,145:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:54:57,162:INFO:discord.client: logging in using static token
+2024-01-26 13:54:58,245:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: e1f1a7af4422dab4d0bbcdcab66f5fc7).
+2024-01-26 13:55:08,932:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 13:55:20,823:INFO:discord: Command: /delete_vouch shauuu_ Divisão 2 by shauuu_
+2024-01-26 13:58:47,988:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:58:48,002:INFO:discord.client: logging in using static token
+2024-01-26 13:58:49,179:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 90005c2bb9bf9ba19812ea94faacfd63).
+2024-01-26 13:58:59,979:INFO:discord: Command: /delete_vouch shauuu_ Divisão 2 by shauuu_
+2024-01-26 13:59:01,958:ERROR:discord.ui.view: Ignoring exception in view <deleteVouchView timeout=180.0 children=1> for item <deleteVouchDropdown placeholder='Escolha um vouch' min_values=1 max_values=1 disabled=False options=[<SelectOption label='Usuário não possui nenhum vouch para a divisão selecionada' value='null' description=None emoji=None default=False>]>
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\ui\view.py", line 427, in _scheduled_task
+    await item.callback(interaction)
+  File "D:\PyCharmProjects\Vouch Bot\dropdowns\delete_vouch.py", line 34, in callback
+    await interaction.message.delete()
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\message.py", line 859, in delete
+    await self._state.http.delete_message(self.channel.id, self.id)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\http.py", line 741, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10008): Unknown Message
+2024-01-26 13:59:17,099:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 13:59:19,325:ERROR:discord.ui.view: Ignoring exception in view <deleteVouchView timeout=180.0 children=1> for item <deleteVouchDropdown placeholder='Escolha um vouch' min_values=1 max_values=1 disabled=False options=[<SelectOption label='Atribuido por linquinhopobre' value='1' description='Data: 2024-01-25 as 21:12:23' emoji=None default=False>]>
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\ui\view.py", line 427, in _scheduled_task
+    await item.callback(interaction)
+  File "D:\PyCharmProjects\Vouch Bot\dropdowns\delete_vouch.py", line 34, in callback
+    await interaction.message.delete()
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\message.py", line 859, in delete
+    await self._state.http.delete_message(self.channel.id, self.id)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\http.py", line 741, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10008): Unknown Message
+2024-01-26 13:59:29,161:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 13:59:29,174:INFO:discord.client: logging in using static token
+2024-01-26 13:59:30,560:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 5b2e0034da4a29c251311cddd34ef9ba).
+2024-01-26 13:59:39,933:INFO:discord: Command: /delete_vouch shauuu_ Divisão 2 by shauuu_
+2024-01-26 13:59:41,763:ERROR:discord.ui.view: Ignoring exception in view <deleteVouchView timeout=180.0 children=1> for item <deleteVouchDropdown placeholder='Escolha um vouch' min_values=1 max_values=1 disabled=False options=[<SelectOption label='Usuário não possui nenhum vouch para a divisão selecionada' value='null' description=None emoji=None default=False>]>
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\ui\view.py", line 427, in _scheduled_task
+    await item.callback(interaction)
+  File "D:\PyCharmProjects\Vouch Bot\dropdowns\delete_vouch.py", line 35, in callback
+    await interaction.message.delete()
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\message.py", line 859, in delete
+    await self._state.http.delete_message(self.channel.id, self.id)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\http.py", line 741, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10008): Unknown Message
+2024-01-26 13:59:52,243:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 13:59:55,036:ERROR:discord.ui.view: Ignoring exception in view <deleteVouchView timeout=180.0 children=1> for item <deleteVouchDropdown placeholder='Escolha um vouch' min_values=1 max_values=1 disabled=False options=[<SelectOption label='Atribuido por linquinhopobre' value='1' description='Data: 2024-01-25 as 21:12:23' emoji=None default=False>]>
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\ui\view.py", line 427, in _scheduled_task
+    await item.callback(interaction)
+  File "D:\PyCharmProjects\Vouch Bot\dropdowns\delete_vouch.py", line 35, in callback
+    await interaction.message.delete()
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\message.py", line 859, in delete
+    await self._state.http.delete_message(self.channel.id, self.id)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\http.py", line 741, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10008): Unknown Message
+2024-01-26 14:00:20,615:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 14:00:20,628:INFO:discord.client: logging in using static token
+2024-01-26 14:00:21,912:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 610210238b0e8cfb3992547192f4f90d).
+2024-01-26 14:01:16,499:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 14:01:16,511:INFO:discord.client: logging in using static token
+2024-01-26 14:01:17,643:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 4cb7e6c1b6f2ef171ca93e7bebbec0d8).
+2024-01-26 14:01:25,048:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 14:01:28,606:ERROR:discord.ui.view: Ignoring exception in view <deleteVouchView timeout=180.0 children=1> for item <deleteVouchDropdown placeholder='Escolha um vouch' min_values=1 max_values=1 disabled=False options=[<SelectOption label='Atribuido por linquinhopobre' value='1' description='Data: 2024-01-25 as 21:12:23' emoji=None default=False>]>
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\ui\view.py", line 427, in _scheduled_task
+    await item.callback(interaction)
+  File "D:\PyCharmProjects\Vouch Bot\dropdowns\delete_vouch.py", line 41, in callback
+    await interaction.message.delete()
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\message.py", line 859, in delete
+    await self._state.http.delete_message(self.channel.id, self.id)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\http.py", line 741, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10008): Unknown Message
+2024-01-26 14:08:30,043:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 14:08:30,060:INFO:discord.client: logging in using static token
+2024-01-26 14:08:31,297:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 434bbe7f8b8d95fc306e60a018b719cd).
+2024-01-26 14:08:55,354:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 14:09:44,657:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 14:09:44,670:INFO:discord.client: logging in using static token
+2024-01-26 14:09:46,500:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: c7828831c87ebf0f8d1c71e7e4a299e8).
+2024-01-26 14:10:05,406:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 14:11:32,857:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 14:11:32,864:INFO:discord.client: logging in using static token
+2024-01-26 14:11:34,174:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 902bf41462d5d0e2ca9d54bc5617fe4b).
+2024-01-26 14:11:39,617:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 14:15:39,898:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 14:15:39,911:INFO:discord.client: logging in using static token
+2024-01-26 14:15:41,050:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 928e70ab6901c9d213b0af906893eec2).
+2024-01-26 14:16:35,103:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 14:16:35,116:INFO:discord.client: logging in using static token
+2024-01-26 14:16:36,235:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 56aca2f7378a56854ad800e19bb19160).
+2024-01-26 14:16:42,396:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 14:17:53,397:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 14:17:53,404:INFO:discord.client: logging in using static token
+2024-01-26 14:17:54,786:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 436e7c60046ec8465e050444ed67f836).
+2024-01-26 14:18:30,770:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 14:18:30,778:INFO:discord.client: logging in using static token
+2024-01-26 14:18:31,884:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: afa2faf4cb73d599038f9b7b7df23c23).
+2024-01-26 14:18:42,882:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 14:19:14,668:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 14:19:14,676:INFO:discord.client: logging in using static token
+2024-01-26 14:19:15,809:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 83808544c1a17d912952251c57900936).
+2024-01-26 14:19:25,766:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 14:21:10,510:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 14:21:10,518:INFO:discord.client: logging in using static token
+2024-01-26 14:21:11,709:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 716d69cbc01dc4080818cd6a44a5364e).
+2024-01-26 14:21:30,446:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 14:21:30,453:INFO:discord.client: logging in using static token
+2024-01-26 14:21:31,585:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 063c21af1b685bd3c1c4a67c88598860).
+2024-01-26 14:21:39,709:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 14:22:41,126:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 14:22:41,133:INFO:discord.client: logging in using static token
+2024-01-26 14:22:42,251:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 44b05d8557c6afbd4ae17c3280a79e6a).
+2024-01-26 14:22:46,322:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 14:23:46,938:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 14:23:46,945:INFO:discord.client: logging in using static token
+2024-01-26 14:23:48,044:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: de38157cb56afdc0958e3754c66d0abb).
+2024-01-26 14:23:56,093:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 14:24:18,160:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 14:24:18,168:INFO:discord.client: logging in using static token
+2024-01-26 14:24:19,336:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 426bd1af0d313f742e1e82afad408caa).
+2024-01-26 14:24:43,210:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 14:24:56,758:INFO:discord: Command: /give_vouch 1imo teste by shauuu_
+2024-01-26 14:25:12,083:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 14:25:34,694:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-26 14:25:34,702:INFO:discord.client: logging in using static token
+2024-01-26 14:25:35,829:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 49b5d5f64e2eb9c7e0814930533c8b0a).
+2024-01-26 14:25:49,128:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
+2024-01-26 14:26:17,478:INFO:discord: Command: /vouches 1imo Divisão 2 by 1imo

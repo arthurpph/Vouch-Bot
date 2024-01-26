@@ -80,6 +80,16 @@ class Vouch:
         Vouch._add_vouch_keys(user.id, last_key + 1, vouch, description, attributed_by_user_id)
 
     @staticmethod
+    def delete_vouch(user_id: int, vouch_id: str):
+        user_vouches = Vouch.loaded_vouches.get(str(user_id))
+        if not user_vouches:
+            return None
+
+        Vouch._delete_vouch_key(user_vouches, user_id, vouch_id)
+
+        return True
+
+    @staticmethod
     def _check_keys(user_id: int, vouch_id: str):
         user_id_str = str(user_id)
 
@@ -125,6 +135,33 @@ class Vouch:
                 file.truncate(0)
                 file.seek(0)
                 json.dump(Vouch.loaded_vouches, file, indent=3)
+
+        except FileNotFoundError as e:
+            print("O arquivo não foi encontrado")
+        except PermissionError as e:
+            print("Sem permissões suficientes para acessar/modificar o arquivo")
+            Vouch._do_backup()
+        except json.JSONDecodeError as e:
+            print("Erro ao decodificar o conteúdo JSON do arquivo")
+            Vouch._do_backup()
+        except Exception as e:
+            print(f"Ocorreu uma exceção não tratada: {e}")
+            Vouch._do_backup()
+
+    @staticmethod
+    def _delete_vouch_key(user_vouches, user_id: int, vouch_id: str):
+        try:
+            Vouch._save_backup()
+
+            with open(Vouch.file_path, 'w') as file:
+                del user_vouches[vouch_id]
+                if len(user_vouches.keys()) == 0:
+                    del Vouch.loaded_vouches[str(user_id)]
+
+                file.truncate(0)
+                file.seek(0)
+                json.dump(Vouch.loaded_vouches, file, indent=3)
+
         except FileNotFoundError as e:
             print("O arquivo não foi encontrado")
         except PermissionError as e:
@@ -156,4 +193,3 @@ class Vouch:
                 json.dump(Vouch.backup_data, file, indent=3)
         except Exception as e:
             print(f"Erro ao fazer backup dos vouches: {e}")
-
