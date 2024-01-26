@@ -28,7 +28,9 @@ class Commands(commands.Cog):
         logger.info(f"Command: /disponivel {modo} by {ctx.user.name}")
 
         if not check_permission(ctx):
-            await ctx.response.send_message(embed=Embed(color=discord.Color.blue(), description="Você não tem permissão para executar isso!"), ephemeral=True)
+            await ctx.response.send_message(
+                embed=Embed(color=discord.Color.blue(), description="Você não tem permissão para executar isso!"),
+                ephemeral=True)
             return
 
         guild = ctx.guild
@@ -50,11 +52,11 @@ class Commands(commands.Cog):
         council_duels_role = guild.get_role(council_duels_id)
         if not council_duels_role:
             await ctx.response.send_message(
-                embed=Embed(color=discord.Color.blue(), description="Cargo council duels inválido"))
+                embed=Embed(color=discord.Color.blue(), description="Cargo council duels inválido"), ephemeral=True)
             return
 
-
-        await ctx.response.send_message(f"{ctx.user.mention} está disponível para duelos de vouch {modo.name} {council_duels_role.mention}!")
+        await ctx.response.send_message("Mensagem criada!", ephemeral=True)
+        await ctx.channel.send(f"{ctx.user.mention} está disponível para duelos de vouch {modo.name} {council_duels_role.mention}!")
 
     @app_commands.command(name="give_vouch", description="Atribui um vouch a um usuário")
     @app_commands.describe(usuario="Escolha o usuário", descricao="Adicione uma descrição")
@@ -62,13 +64,16 @@ class Commands(commands.Cog):
         logger.info(f"Command: /give_vouch {usuario} {descricao} by {ctx.user.name}")
 
         if not check_permission(ctx):
-            await ctx.response.send_message(embed=Embed(color=discord.Color.blue(), description="Você não tem permissão para executar isso!"), ephemeral=True)
+            await ctx.response.send_message(
+                embed=Embed(color=discord.Color.blue(), description="Você não tem permissão para executar isso!"),
+                ephemeral=True)
             return
 
         Vouch.add_vouch(usuario, descricao, ctx.user.id)
 
         try:
-            await usuario.send(embed=Embed(color=discord.Color.blue(), description=f"Você recebeu um vouch por {ctx.user.mention}!"))
+            await usuario.send(
+                embed=Embed(color=discord.Color.blue(), description=f"Você recebeu um vouch por {ctx.user.mention}!"))
         except Forbidden:
             pass
 
@@ -89,7 +94,7 @@ class Commands(commands.Cog):
 
         if not Vouch.user_has_vouches(usuario.id):
             embed = Embed(description=f"{usuario.mention} nunca recebeu nenhum vouch.", color=discord.Color.blue())
-            await ctx.response.send_message(embed=embed, ephemeral=True)
+            await ctx.response.send_message(embed=embed)
             return
 
         expired = 0
@@ -119,18 +124,18 @@ class Commands(commands.Cog):
             if len(embed.fields) == 0:
                 embed_temp = Embed(color=discord.Color.blue(),
                                    description=f"{usuario.mention} não tem nenhum vouch para esta divisão")
-                await ctx.response.send_message(embed=embed_temp, ephemeral=True)
+                await ctx.response.send_message(embed=embed_temp)
                 return
 
         except InvalidUser as e:
             embed = Embed(color=discord.Color.blue(), description=f"Erro: {e}")
-            await ctx.response.send_message(embed, ephemeral=True)
+            await ctx.response.send_message(embed=embed, ephemeral=True)
             return
 
         embed.set_footer(text=f"+ {str(expired)} Vouch(es) expirados\n"
                               f"(Vouches expiram depois de 4 meses)")
 
-        await ctx.response.send_message(embed=embed, ephemeral=True)
+        await ctx.response.send_message(embed=embed)
 
     @app_commands.command(name="promote", description="Promove um usuário para uma divisão")
     @app_commands.describe(usuario="Escolha um usuário", rank="Escolha um rank")
@@ -142,7 +147,7 @@ class Commands(commands.Cog):
     async def promote(self, ctx: commands.Context, usuario: User, rank: app_commands.Choice[int]):
         logger.info(f"Command: /promote {usuario} {rank.name} by {ctx.user.name}")
 
-        if not check_permission(ctx):
+        if not check_permission_only_staff(ctx):
             await ctx.response.send_message(
                 embed=Embed(color=discord.Color.blue(), description="Você não tem permissão para executar isso!"),
                 ephemeral=True)
@@ -185,7 +190,9 @@ class Commands(commands.Cog):
 
                 await member.add_roles(role)
             except Forbidden:
-                await ctx.response.send_message(embed=Embed(color=discord.Color.blue(), description="Eu não tenho permissão para editar cargos."), ephemeral=True)
+                await ctx.response.send_message(
+                    embed=Embed(color=discord.Color.blue(), description="Eu não tenho permissão para editar cargos."),
+                    ephemeral=True)
                 return
 
             embed = Embed(color=discord.Color.blue(), description="Usuário promovido com sucesso!")
@@ -213,7 +220,7 @@ class Commands(commands.Cog):
     async def purge(self, ctx: commands.Context, usuario: User):
         logger.info(f"Command: /purge {usuario} by {ctx.user.name}")
 
-        if not check_permission(ctx):
+        if not check_permission_only_staff(ctx):
             await ctx.response.send_message(
                 embed=Embed(color=discord.Color.blue(), description="Você não tem permissão para executar isso!"),
                 ephemeral=True)
@@ -253,12 +260,16 @@ class Commands(commands.Cog):
             elif role_name == "Divisao 3":
                 role = Config.get_casual_role_id()
             elif role_name == "Casual":
-                await ctx.response.send_message(embed=Embed(color=discord.Color.blue(), description=f"{usuario.mention} já está no rank Casual"), ephemeral=True)
+                await ctx.response.send_message(
+                    embed=Embed(color=discord.Color.blue(), description=f"{usuario.mention} já está no rank Casual"),
+                    ephemeral=True)
                 return
 
             guild_role = guild.get_role(role)
             if not guild_role:
-                await ctx.response.send_message(embed=Embed(color=discord.Color.blue(), description="Cargo da divisão não encontrado"), ephemeral=True)
+                await ctx.response.send_message(
+                    embed=Embed(color=discord.Color.blue(), description="Cargo da divisão não encontrado"),
+                    ephemeral=True)
                 return
 
             for role in member.roles:
@@ -266,9 +277,12 @@ class Commands(commands.Cog):
                     await member.remove_roles(role)
 
             await member.add_roles(guild_role)
-            await ctx.response.send_message(embed=Embed(color=discord.Color.blue(), description="Usuário rebaixado com sucesso"), ephemeral=True)
+            await ctx.response.send_message(
+                embed=Embed(color=discord.Color.blue(), description="Usuário rebaixado com sucesso"), ephemeral=True)
         except Forbidden:
-            await ctx.response.send_message(embed=Embed(color=discord.Color.blue(), description="Não tenho permissão para executar isso"), ephemeral=True)
+            await ctx.response.send_message(
+                embed=Embed(color=discord.Color.blue(), description="Não tenho permissão para executar isso"),
+                ephemeral=True)
 
 
 def check_permission(ctx):
@@ -278,6 +292,17 @@ def check_permission(ctx):
     for role in ctx.user.roles:
         if any(role.id in list for list in [div_council_roles_id, staff_roles]):
             return True
+
+    return False
+
+
+def check_permission_only_staff(ctx):
+    staff_roles = Config.get_staff_roles_id()
+
+    for role in ctx.user.roles:
+        for staff_role_id in staff_roles:
+            if role.id == staff_role_id:
+                return True
 
     return False
 
