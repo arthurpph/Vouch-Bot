@@ -3,6 +3,7 @@ from typing import Final
 import os
 
 import nest_asyncio
+import discord
 from dotenv import load_dotenv
 from discord import Intents
 from discord.ext import commands
@@ -25,7 +26,7 @@ intents.message_content = True  # NOQA
 intents.presences = True  # NOQA
 intents.members = True  # NOQA
 
-bot = commands.Bot(command_prefix="/", intents=intents)
+bot = commands.Bot(command_prefix="/", activity=discord.Game(name="The Bridge"), intents=intents)
 
 div_roles = Config.get_div_roles_id()
 

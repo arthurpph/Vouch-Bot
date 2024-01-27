@@ -2144,3 +2144,75 @@ discord.errors.NotFound: 404 Not Found (error code: 10008): Unknown Message
 2024-01-26 14:25:35,829:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 49b5d5f64e2eb9c7e0814930533c8b0a).
 2024-01-26 14:25:49,128:INFO:discord: Command: /delete_vouch 1imo Divisão 2 by shauuu_
 2024-01-26 14:26:17,478:INFO:discord: Command: /vouches 1imo Divisão 2 by 1imo
+2024-01-27 14:45:19,857:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-27 14:45:20,037:INFO:discord.client: logging in using static token
+2024-01-27 14:45:21,210:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 33df645a4741f69dbfea2bf32c4eeef7).
+2024-01-27 14:45:49,574:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-27 14:46:02,022:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-27 14:46:03,576:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-27 14:46:04,822:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-27 14:46:07,702:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-27 14:46:08,369:ERROR:discord.app_commands.tree: Ignoring exception in command 'give_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 86, in give_vouch
+    await ctx.invoke(self.bot.get_command('promote'))
+AttributeError: 'Interaction' object has no attribute 'invoke'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'give_vouch' raised an exception: AttributeError: 'Interaction' object has no attribute 'invoke'
+2024-01-27 14:46:31,970:INFO:discord: Command: /delete_vouch shauuu_ Divisão 3 by shauuu_
+2024-01-27 14:46:56,795:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-27 14:46:56,835:INFO:discord.client: logging in using static token
+2024-01-27 14:46:57,963:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 2aec3fa318e876606ea90b91647a3c80).
+2024-01-27 14:47:07,358:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-27 14:47:08,306:ERROR:discord.app_commands.tree: Ignoring exception in command 'give_vouch'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "D:\PyCharmProjects\Vouch Bot\commands.py", line 88, in give_vouch
+    await ctx.invoke(self.bot.get_command('promote'))
+AttributeError: 'Interaction' object has no attribute 'invoke'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "D:\PyCharmProjects\Vouch Bot\.venv\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'give_vouch' raised an exception: AttributeError: 'Interaction' object has no attribute 'invoke'
+2024-01-27 14:48:18,656:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-27 14:48:18,672:INFO:discord.client: logging in using static token
+2024-01-27 14:48:19,811:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: bf8f1c859313ecfc9b5dd9d0125acf6d).
+2024-01-27 14:48:44,419:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-27 14:48:44,435:INFO:discord.client: logging in using static token
+2024-01-27 14:48:45,517:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 4a59f695cb5436b9010e92d293c509db).
+2024-01-27 14:49:09,342:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-27 14:49:09,349:INFO:discord.client: logging in using static token
+2024-01-27 14:49:10,523:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 0e0a99ca92d5ed7b130b63eefabc9072).
+2024-01-27 14:50:36,332:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-27 14:50:36,349:INFO:discord.client: logging in using static token
+2024-01-27 14:50:37,463:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 91cc7b89d8513632ec1b1f502e2c0dfc).
+2024-01-27 15:00:37,120:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-27 15:00:37,137:INFO:discord.client: logging in using static token
+2024-01-27 15:00:38,327:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: e3958424ddabc2eacf4be049ea787c2b).
+2024-01-27 15:21:19,396:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-27 15:21:40,818:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-27 15:24:11,999:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-27 15:24:12,015:INFO:discord.client: logging in using static token
+2024-01-27 15:24:13,234:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: d6f5f5ef9687b766bbb38649c27e237b).
+2024-01-27 15:24:59,716:INFO:discord: Command: /delete_vouch shauuu_ Divisão 3 by shauuu_
+2024-01-27 15:25:11,299:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-27 15:25:48,815:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_

@@ -72,7 +72,7 @@ class Vouch:
         else:
             last_key = int(list(user_vouches.keys())[-1])
 
-        vouch = Vouch._get_vouch_name(user)
+        vouch = Vouch.get_vouch_name(user)
         if not vouch:
             print("Error: _get_vouch_name returned None")
             return
@@ -90,19 +90,7 @@ class Vouch:
         return True
 
     @staticmethod
-    def _check_keys(user_id: int, vouch_id: str):
-        user_id_str = str(user_id)
-
-        if user_id_str not in Vouch.loaded_vouches:
-            return False
-
-        if vouch_id not in Vouch.loaded_vouches[user_id_str]:
-            return False
-
-        return True
-
-    @staticmethod
-    def _get_vouch_name(user):
+    def get_vouch_name(user):
         role_name = convert_role_to_name(user)
         if role_name == "Divisao 1":
             return "Divisao 1A"
@@ -114,6 +102,18 @@ class Vouch:
             return "Divisao 3"
         else:
             return None
+
+    @staticmethod
+    def _check_keys(user_id: int, vouch_id: str):
+        user_id_str = str(user_id)
+
+        if user_id_str not in Vouch.loaded_vouches:
+            return False
+
+        if vouch_id not in Vouch.loaded_vouches[user_id_str]:
+            return False
+
+        return True
 
     @staticmethod
     def _add_vouch_keys(user_id: int, vouch_id: int, vouch: str, description: str, attributed_by: int):
@@ -191,5 +191,7 @@ class Vouch:
         try:
             with open(Vouch.file_path, 'w') as file:
                 json.dump(Vouch.backup_data, file, indent=3)
+
+            Vouch.loaded_vouches = Vouch.backup_data
         except Exception as e:
             print(f"Erro ao fazer backup dos vouches: {e}")

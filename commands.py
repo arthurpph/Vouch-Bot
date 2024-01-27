@@ -5,7 +5,8 @@ from main import div_roles
 
 from config import Config
 from vouch import Vouch
-from utils import convert_data_to_discord_format, get_past_time_in_months, convert_name_to_role, convert_role_to_name
+from utils import convert_data_to_discord_format, get_past_time_in_months, convert_name_to_role, convert_role_to_name, \
+    promote_player
 from logger import get_logger
 from exceptions import InsufficientPermission, InvalidChannelId, InvalidUser, InvalidRole
 from dropdowns import delete_vouch
@@ -57,7 +58,8 @@ class Commands(commands.Cog):
             return
 
         await ctx.response.send_message("Mensagem criada!", ephemeral=True)
-        await ctx.channel.send(f"{ctx.user.mention} está disponível para duelos de vouch {modo.name} {council_duels_role.mention}!")
+        await ctx.channel.send(
+            f"{ctx.user.mention} está disponível para duelos de vouch {modo.name} {council_duels_role.mention}!")
 
     @app_commands.command(name="give_vouch", description="Atribui um vouch a um usuário")
     @app_commands.describe(usuario="Escolha o usuário", descricao="Adicione uma descrição")
@@ -81,6 +83,11 @@ class Commands(commands.Cog):
         embed = Embed(color=discord.Color.blue(), description="Vouch adicionado!")
         await ctx.response.send_message(embed=embed, ephemeral=True)
 
+        guild = ctx.guild
+        if check_promotion(guild, usuario.id):
+            print("test")
+            await promote_player(guild, usuario)
+
     @app_commands.command(name="delete_vouch", description="Deleta um vouch de um jogador")
     @app_commands.describe(usuario="Escolha o usuário", rank="Escolha um rank")
     @app_commands.choices(rank=[
@@ -92,10 +99,13 @@ class Commands(commands.Cog):
         logger.info(f"Command: /delete_vouch {usuario} {rank.name} by {ctx.user.name}")
 
         if not check_permission_only_staff(ctx):
-            await ctx.response.send_message(embed=Embed(color=discord.Color.blue(), description="Você não tem permissão para executar isso!"), ephemeral=True)
+            await ctx.response.send_message(
+                embed=Embed(color=discord.Color.blue(), description="Você não tem permissão para executar isso!"),
+                ephemeral=True)
             return
 
-        await ctx.response.send_message(view=delete_vouch.DeleteVouchView(ctx.guild, usuario.id, rank.name), ephemeral=True)
+        await ctx.response.send_message(view=delete_vouch.DeleteVouchView(ctx.guild, usuario.id, rank.name),
+                                        ephemeral=True)
 
     @app_commands.command(name="vouches", description="Mostra os vouches de um jogador")
     @app_commands.describe(usuario="Escolha o usuário", rank="Escolha um rank")
@@ -320,6 +330,29 @@ def check_permission_only_staff(ctx):
         for staff_role_id in staff_roles:
             if role.id == staff_role_id:
                 return True
+
+    return False
+
+
+def get_minimum_promotion_vouches(guild: discord.Guild, user_id: int):
+    role_name = convert_role_to_name(guild.get_member(user_id))
+    if role_name == "Divisao 2":
+        return 2
+    elif role_name == "Divisao 3":
+        return 4
+    elif role_name == "Casual":
+        return 5
+    else:
+        return None
+
+
+def check_promotion(guild: discord.Guild, user_id: int):
+    user_vouches = Vouch.get_user_vouches(user_id)
+    minimum_promotion = get_minimum_promotion_vouches(guild, user_id)
+    print(len(user_vouches.keys()))
+    print(minimum_promotion)
+    if user_vouches and minimum_promotion is not None and len(user_vouches.keys()) >= minimum_promotion:
+        return True
 
     return False
 

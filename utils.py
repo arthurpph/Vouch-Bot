@@ -4,6 +4,7 @@ from discord import Member
 from datetime import datetime
 
 from config import Config
+import vouch
 
 data_format = "%Y-%m-%d %H:%M:%S"
 brazilian_date_format = "%d/%m/%Y"
@@ -70,3 +71,20 @@ def convert_role_to_name(member: Member):
             return "Casual"
 
     return None
+
+
+async def promote_player(guild: discord.Guild, member: Member):
+    casual_role = guild.get_role(int(Config.get_casual_role_id()))
+    div_roles = Config.get_div_roles_id()
+    promotion_role_name = vouch.Vouch.get_vouch_name(member)
+    role = guild.get_role(convert_name_to_role(promotion_role_name))
+
+    print("promotion")
+    for member_role in member.roles:
+        if member_role.id in div_roles:
+            await member.remove_roles(member_role)
+
+        if casual_role in member.roles:
+            await member.remove_roles(casual_role)
+
+        await member.add_roles(role)
