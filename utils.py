@@ -6,8 +6,6 @@ from datetime import datetime
 from config import Config
 import vouch
 
-from main import bot
-
 data_format = "%Y-%m-%d %H:%M:%S"
 brazilian_date_format = "%d/%m/%Y"
 
@@ -99,4 +97,4 @@ async def promote_player(guild: discord.Guild, member: Member):
         pass
 
     await channel.send(embed=Embed(color=discord.Color.blue(), title="Promoção",
-                                   description=f"{bot.mention} promoveu {member.mention} para {role.mention}!"))
+                                   description=f"{member.mention} foi promovido automaticamente para {role.mention}!"))
