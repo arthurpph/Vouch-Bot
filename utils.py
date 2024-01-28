@@ -1,10 +1,12 @@
 import discord
-from discord import Member
+from discord import Member, Embed, Forbidden
 
 from datetime import datetime
 
 from config import Config
 import vouch
+
+from main import bot
 
 data_format = "%Y-%m-%d %H:%M:%S"
 brazilian_date_format = "%d/%m/%Y"
@@ -78,8 +80,8 @@ async def promote_player(guild: discord.Guild, member: Member):
     div_roles = Config.get_div_roles_id()
     promotion_role_name = vouch.Vouch.get_vouch_name(member)
     role = guild.get_role(convert_name_to_role(promotion_role_name))
+    channel = guild.get_channel(int(Config.get_promotions_channel_id()))
 
-    print("promotion")
     for member_role in member.roles:
         if member_role.id in div_roles:
             await member.remove_roles(member_role)
@@ -88,3 +90,11 @@ async def promote_player(guild: discord.Guild, member: Member):
             await member.remove_roles(casual_role)
 
         await member.add_roles(role)
+
+    try:
+        await member.send(
+            embed=Embed(color=role.color, description=f"Parabéns! Você foi promovido para {promotion_role_name.replace('a', 'ã')}!"))
+        await channel.send(embed=Embed(color=discord.Color.blue(), title="Promoção",
+                                       description=f"{bot.mention} promoveu {member.mention} para {role.mention}!"))
+    except Forbidden:
+        pass

@@ -85,7 +85,6 @@ class Commands(commands.Cog):
 
         guild = ctx.guild
         if check_promotion(guild, usuario.id):
-            print("test")
             await promote_player(guild, usuario)
 
     @app_commands.command(name="delete_vouch", description="Deleta um vouch de um jogador")
@@ -349,8 +348,6 @@ def get_minimum_promotion_vouches(guild: discord.Guild, user_id: int):
 def check_promotion(guild: discord.Guild, user_id: int):
     user_vouches = Vouch.get_user_vouches(user_id)
     minimum_promotion = get_minimum_promotion_vouches(guild, user_id)
-    print(len(user_vouches.keys()))
-    print(minimum_promotion)
     if user_vouches and minimum_promotion is not None and len(user_vouches.keys()) >= minimum_promotion:
         return True
 
