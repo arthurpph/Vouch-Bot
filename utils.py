@@ -93,8 +93,10 @@ async def promote_player(guild: discord.Guild, member: Member):
 
     try:
         await member.send(
-            embed=Embed(color=role.color, description=f"Parabéns! Você foi promovido para {promotion_role_name.replace('a', 'ã')}!"))
-        await channel.send(embed=Embed(color=discord.Color.blue(), title="Promoção",
-                                       description=f"{bot.mention} promoveu {member.mention} para {role.mention}!"))
+            embed=Embed(color=role.color,
+                        description=f"Parabéns! Você foi promovido para {promotion_role_name.replace('a', 'ã')}!"))
     except Forbidden:
         pass
+
+    await channel.send(embed=Embed(color=discord.Color.blue(), title="Promoção",
+                                   description=f"{bot.mention} promoveu {member.mention} para {role.mention}!"))

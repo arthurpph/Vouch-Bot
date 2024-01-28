@@ -227,10 +227,11 @@ class Commands(commands.Cog):
             try:
                 await usuario.send(
                     embed=Embed(color=role.color, description=f"Parabéns! Você foi promovido para {rank.name}!"))
-                await channel.send(embed=Embed(color=discord.Color.blue(), title="Promoção",
-                                               description=f"{ctx.user.mention} promoveu {member.mention} para {role.mention}!"))
             except Forbidden:
                 pass
+
+            await channel.send(embed=Embed(color=discord.Color.blue(), title="Promoção",
+                                       description=f"{ctx.user.mention} promoveu {member.mention} para {role.mention}!"))
         except InsufficientPermission as e:
             embed = Embed(description=f"Erro: {e}")
             await ctx.response.send_message(embed=embed, ephemeral=True)
