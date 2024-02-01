@@ -2216,3 +2216,12 @@ discord.app_commands.errors.CommandInvokeError: Command 'give_vouch' raised an e
 2024-01-27 15:24:59,716:INFO:discord: Command: /delete_vouch shauuu_ Divisão 3 by shauuu_
 2024-01-27 15:25:11,299:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
 2024-01-27 15:25:48,815:INFO:discord: Command: /give_vouch shauuu_ teste by shauuu_
+2024-01-27 22:43:48,531:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-27 22:43:48,669:INFO:discord.client: logging in using static token
+2024-01-27 22:43:49,747:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 8d71a36da9e902870479a16f254c9313).
+2024-01-27 22:44:47,471:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-01-27 22:44:47,484:INFO:discord.client: logging in using static token
+2024-01-27 22:44:48,568:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: cc61fa7b629b79616f8f8d1700f2ca75).
+2024-02-01 01:46:35,083:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-01 01:46:35,161:INFO:discord.client: logging in using static token
+2024-02-01 01:46:36,296:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 5bd2a3c305cbebabab031dc1c21abd63).
