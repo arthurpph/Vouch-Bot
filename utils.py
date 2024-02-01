@@ -118,6 +118,18 @@ async def get_previous_role(ctx, user):
         embed=Embed(color=discord.Color.blue(), description=f"{user.mention} já está no rank Casual"),
         ephemeral=True)
 
+def get_next_role(guild, user):
+    role_name = convert_role_to_name(guild.get_member(user.id))
+
+    if role_name == "Divisao 1":
+        return "Divisao 1A"
+    elif role_name == "Divisao 2":
+        return "Divisao 1"
+    elif role_name == "Divisao 3":
+        return "Divisao 2"
+    else:
+        return "Divisao 3"
+
 
 def check_permission(ctx):
     div_council_roles_id = Config.get_div_council_roles_id()
@@ -153,10 +165,24 @@ def get_minimum_promotion_vouches(guild: discord.Guild, user_id: int):
         return None
 
 
+def get_promotion_vouches(guild: discord.Guild, user_id):
+    next_role = get_next_role(guild, guild.get_member(user_id))
+
+    vouches = 0
+
+    for vouch_id in vouch.Vouch.get_user_vouches(user_id):
+        if vouch.Vouch.get_vouch(user_id, vouch_id) == next_role:
+            vouches += 1
+
+    return vouches
+
+
 def check_promotion(guild: discord.Guild, user_id: int):
     user_vouches = vouch.Vouch.get_user_vouches(user_id)
     minimum_promotion = get_minimum_promotion_vouches(guild, user_id)
-    if user_vouches and minimum_promotion is not None and len(user_vouches.keys()) >= minimum_promotion:
+    vouches_for_next_rank = get_promotion_vouches(guild, user_id)
+
+    if user_vouches and minimum_promotion is not None and vouches_for_next_rank >= minimum_promotion:
         return True
 
     return False

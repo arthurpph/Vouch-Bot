@@ -276,14 +276,10 @@ class Commands(commands.Cog):
                 await ctx.response.send_message(embed=embed, ephemeral=True)
                 return
 
-            global role
-            role = utils.get_previous_role(ctx, usuario)
+            role = await utils.get_previous_role(ctx, usuario)
 
             guild_role = guild.get_role(role)
             if not guild_role:
-                await ctx.response.send_message(
-                    embed=Embed(color=discord.Color.blue(), description="Cargo da divisão não encontrado"),
-                    ephemeral=True)
                 return
 
             for role in member.roles:
