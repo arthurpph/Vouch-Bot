@@ -1,4 +1,5 @@
 import logging
+import colorlog
 
 
 def load_logger():
