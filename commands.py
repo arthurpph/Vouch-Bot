@@ -88,7 +88,7 @@ class Commands(commands.Cog):
 
         guild = ctx.guild
         if utils.check_promotion(guild, usuario.id):
-            await promote_player(guild, usuario)
+            await promote_player(guild, guild.get_member(usuario.id))
 
     @app_commands.command(name="delete_vouch", description="Deleta um vouch de um jogador")
     @app_commands.describe(usuario="Escolha o usuário", rank="Escolha um rank")
