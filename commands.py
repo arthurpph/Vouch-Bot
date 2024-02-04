@@ -294,6 +294,15 @@ class Commands(commands.Cog):
                 embed=Embed(color=discord.Color.blue(), description="Não tenho permissão para executar isso"),
                 ephemeral=True)
 
+    async def cog_app_command_error(self, ctx: commands.Context, error: Exception) -> None:
+        logger.error(error)
+
+        try:
+            await ctx.response.defer()
+        except Exception:
+            pass
+
+        await ctx.followup.send(embed=Embed(color=discord.Color.blue(), description=f"{error.original}\n\n Por favor reporte para shauuu\_"))
 
 async def setup(bot):
     await bot.add_cog(Commands(bot))
