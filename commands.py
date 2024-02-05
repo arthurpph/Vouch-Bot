@@ -302,7 +302,7 @@ class Commands(commands.Cog):
         except Exception:
             pass
 
-        await ctx.followup.send(embed=Embed(color=discord.Color.blue(), description=f"{error.original}\n\n Por favor reporte para shauuu\_"))
+        await ctx.followup.send(embed=Embed(color=discord.Color.blue(), title="Erro", description=f"{error.original}\n\n Por favor reporte para shauuu\_"))
 
 async def setup(bot):
     await bot.add_cog(Commands(bot))
