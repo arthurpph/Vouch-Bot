@@ -10,8 +10,8 @@ class Config:
         script_dir = os.path.dirname(os.path.abspath(__file__))
         file_path = os.path.join(script_dir, 'config.json')
 
-        with open(file_path, 'r') as f:
-            Config.loaded_config = json.load(f)
+        with open(file_path, 'r') as file:
+            Config.loaded_config = json.load(file)
 
     @staticmethod
     def get_casual_role_id():
@@ -51,4 +51,7 @@ class Config:
 
     @staticmethod
     def get_div_purge_forum_id(div: int):
+        if not Config.loaded_config[f"div{div}PurgeForumId"]:
+            return None
+
         return int(Config.loaded_config[f"div{div}PurgeForumId"])

@@ -12,3 +12,6 @@ class InvalidUser(Exception):
 
 class InvalidRole(Exception):
     pass
+
+class InvalidRoleId(Exception):
+    pass

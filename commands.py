@@ -11,7 +11,7 @@ from vouch import Vouch
 from utils import convert_data_to_discord_format, get_past_time_in_months, convert_name_to_role, convert_role_to_name, \
     promote_player
 from logger import get_logger
-from exceptions import InsufficientPermission, InvalidChannelId, InvalidUser, InvalidRole
+from exceptions import InsufficientPermission, InvalidChannelId, InvalidUser, InvalidRole, InvalidRoleId
 from dropdowns import delete_vouch
 
 logger = get_logger()
@@ -317,7 +317,12 @@ class Commands(commands.Cog):
             return
 
         member_div_int = int(member_div.split(" ")[1])
-        forum_channel = guild.get_channel(Config.get_div_purge_forum_id(member_div_int))
+        div_purge_forum_id = Config.get_div_purge_forum_id(member_div_int)
+
+        if not div_purge_forum_id:
+            raise InvalidRoleId("Purge forum ID inválido")
+
+        forum_channel = guild.get_channel(div_purge_forum_id)
         div_council_role = guild.get_role(Config.get_div_council_role_id(member_div_int))
 
         if not member:
