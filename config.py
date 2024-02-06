@@ -48,3 +48,7 @@ class Config:
     @staticmethod
     def get_council_duels_role_id():
         return int(Config.loaded_config["councilDuelsRoleId"])
+
+    @staticmethod
+    def get_div_purge_forum_id(div: int):
+        return int(Config.loaded_config[f"div{div}PurgeForumId"])

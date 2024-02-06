@@ -2225,3 +2225,82 @@ discord.app_commands.errors.CommandInvokeError: Command 'give_vouch' raised an e
 2024-02-01 01:46:35,083:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
 2024-02-01 01:46:35,161:INFO:discord.client: logging in using static token
 2024-02-01 01:46:36,296:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 5bd2a3c305cbebabab031dc1c21abd63).
+2024-02-06 19:45:57,312:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-06 19:45:57,439:INFO:discord.client: logging in using static token
+2024-02-06 19:45:58,580:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: c65182fae2645f33a48030f5c009d4ca).
+2024-02-06 19:46:37,905:INFO:discord: Command: /purge_list shauuu_ by shauuu_
+2024-02-06 19:47:01,127:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-06 19:47:01,146:INFO:discord.client: logging in using static token
+2024-02-06 19:47:02,472:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 81eb8ec680a726aa08c1f9454667c9e4).
+2024-02-06 19:47:06,908:INFO:discord: Command: /purge_list shauuu_ by shauuu_
+2024-02-06 19:48:56,361:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-06 19:48:56,372:INFO:discord.client: logging in using static token
+2024-02-06 19:48:57,513:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: f69f30d9237c31c00d3f98b7c3280ea7).
+2024-02-06 19:49:01,495:INFO:discord: Command: /purge_list shauuu_ by shauuu_
+2024-02-06 19:49:01,890:ERROR:discord: Command 'purge_list' raised an exception: TypeError: object ForumChannel can't be used in 'await' expression
+2024-02-06 19:49:19,663:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-06 19:49:19,680:INFO:discord.client: logging in using static token
+2024-02-06 19:49:20,808:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 9de7484aefae2feb3042b8e70a7562e9).
+2024-02-06 19:49:26,167:INFO:discord: Command: /purge_list shauuu_ by shauuu_
+2024-02-06 19:49:26,491:ERROR:discord: Command 'purge_list' raised an exception: TypeError: object ForumChannel can't be used in 'await' expression
+2024-02-06 19:50:36,201:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-06 19:50:36,210:INFO:discord.client: logging in using static token
+2024-02-06 19:50:37,334:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 1c63e374ae90a7734cf43ac18f1ac97e).
+2024-02-06 19:51:02,679:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-06 19:51:02,696:INFO:discord.client: logging in using static token
+2024-02-06 19:51:03,939:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 820e96248f5f39e2779f1d9346643632).
+2024-02-06 19:51:08,325:INFO:discord: Command: /purge_list shauuu_ by shauuu_
+2024-02-06 19:51:08,742:ERROR:discord: Command 'purge_list' raised an exception: TypeError: object ForumChannel can't be used in 'await' expression
+2024-02-06 19:51:36,145:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-06 19:51:36,164:INFO:discord.client: logging in using static token
+2024-02-06 19:51:37,415:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: a38b72121f801d3a454e412ca5636493).
+2024-02-06 19:51:39,154:INFO:discord: Command: /purge_list shauuu_ by shauuu_
+2024-02-06 19:51:39,534:ERROR:discord: Command 'purge_list' raised an exception: TypeError: object ForumChannel can't be used in 'await' expression
+2024-02-06 19:52:03,550:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-06 19:52:03,566:INFO:discord.client: logging in using static token
+2024-02-06 19:52:04,909:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 0c2ae01c9b72bec5a943638687fc3cbb).
+2024-02-06 19:52:09,665:INFO:discord: Command: /purge_list shauuu_ by shauuu_
+2024-02-06 19:52:10,177:ERROR:discord: Command 'purge_list' raised an exception: HTTPException: 400 Bad Request (error code: 50006): Cannot send an empty message
+2024-02-06 19:56:16,124:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-06 19:56:16,201:INFO:discord.client: logging in using static token
+2024-02-06 19:56:17,507:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: dbd39886c545acc7471690c6239a257b).
+2024-02-06 19:56:23,117:INFO:discord: Command: /purge_list shauuu_ by shauuu_
+2024-02-06 19:56:54,270:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-06 19:56:54,290:INFO:discord.client: logging in using static token
+2024-02-06 19:56:55,622:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: be3811b259a1b7ec06344b8a1ae91f3c).
+2024-02-06 19:56:58,936:INFO:discord: Command: /purge_list shauuu_ by shauuu_
+2024-02-06 19:57:02,096:ERROR:discord: Command 'purge_list' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2024-02-06 19:58:48,519:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-06 19:58:48,540:INFO:discord.client: logging in using static token
+2024-02-06 19:58:49,766:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: cd741a95b124b5fa5435ebc01247d7d1).
+2024-02-06 19:58:52,102:INFO:discord: Command: /purge_list shauuu_ by shauuu_
+2024-02-06 19:58:53,309:ERROR:discord: Command 'purge_list' raised an exception: AttributeError: 'ThreadWithMessage' object has no attribute 'send'
+2024-02-06 19:58:57,731:INFO:discord: Command: /vouches bruits. Divisão 3 by 5hisui
+2024-02-06 20:00:02,081:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-06 20:00:02,097:INFO:discord.client: logging in using static token
+2024-02-06 20:00:03,414:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: b8565ad8a020c5bc55d94814917a008c).
+2024-02-06 20:00:06,305:INFO:discord: Command: /purge_list shauuu_ by shauuu_
+2024-02-06 20:00:07,761:ERROR:discord: Command 'purge_list' raised an exception: AttributeError: 'Webhook' object has no attribute 'send_message'
+2024-02-06 20:03:24,484:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-06 20:03:24,501:INFO:discord.client: logging in using static token
+2024-02-06 20:03:25,687:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: b96ccf9fb4aaab08e3c0dcf29fc6fc64).
+2024-02-06 20:03:33,888:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-06 20:03:33,905:INFO:discord.client: logging in using static token
+2024-02-06 20:03:35,410:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: d768c5a85c7947bd285aee80e6d7eeae).
+2024-02-06 20:03:47,298:INFO:discord: Command: /purge_list shauuu_ by shauuu_
+2024-02-06 20:03:48,254:ERROR:discord: Command 'purge_list' raised an exception: AttributeError: 'ThreadWithMessage' object has no attribute 'add_reaction'
+2024-02-06 20:04:38,529:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-06 20:04:38,546:INFO:discord.client: logging in using static token
+2024-02-06 20:04:39,618:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: d82716756b1d14b5d1ffeda4e713cdc9).
+2024-02-06 20:04:52,684:INFO:discord: Command: /purge_list shauuu_ by shauuu_
+2024-02-06 20:04:53,999:ERROR:discord: Command 'purge_list' raised an exception: AttributeError: 'ThreadWithMessage' object has no attribute 'first_message'
+2024-02-06 20:05:40,403:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-06 20:05:40,420:INFO:discord.client: logging in using static token
+2024-02-06 20:05:41,846:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 5f692dae6bcc00472da5f0bf2fbefe01).
+2024-02-06 20:05:44,039:INFO:discord: Command: /purge_list shauuu_ by shauuu_
+2024-02-06 20:05:45,428:ERROR:discord: Command 'purge_list' raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In emoji_id: Value "" is not snowflake.
+2024-02-06 20:06:30,492:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-06 20:06:30,508:INFO:discord.client: logging in using static token
+2024-02-06 20:06:31,908:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: e3b5e9937f75d4e3cb4f5ec288cb53ca).
+2024-02-06 20:06:43,045:INFO:discord: Command: /purge_list shauuu_ by shauuu_

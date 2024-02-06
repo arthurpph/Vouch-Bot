@@ -280,6 +280,7 @@ class Commands(commands.Cog):
 
             guild_role = guild.get_role(role)
             if not guild_role:
+                await ctx.response.send_message(embed=Embed(color=discord.Color.blue(), description="Cargo não encontrado no servidor"), ephemeral=True)
                 return
 
             for role in member.roles:
@@ -294,11 +295,49 @@ class Commands(commands.Cog):
                 embed=Embed(color=discord.Color.blue(), description="Não tenho permissão para executar isso"),
                 ephemeral=True)
 
+    @app_commands.command(name="purge_list", description="Cria um tópico para votação")
+    @app_commands.describe(usuario="Escolha o usuário")
+    async def purge_list(self, ctx: commands.Context, usuario: User):
+        logger.info(f"Command: /purge_list {usuario} by {ctx.user.name}")
+
+        if not check_permission_only_staff(ctx):
+            await ctx.response.send_message(
+                embed=Embed(color=discord.Color.blue(), description="Você não tem permissão para executar isso!"),
+                ephemeral=True)
+            return
+
+        await ctx.response.defer(ephemeral=True)
+
+        guild = ctx.guild
+        member = await guild.fetch_member(usuario.id)
+        member_div = utils.convert_role_to_name(member)
+        member_div_int = int(member_div.split(" ")[1])
+        forum_channel = guild.get_channel(Config.get_div_purge_forum_id(member_div_int))
+        div_council_role = guild.get_role(Config.get_div_council_role_id(member_div_int))
+
+        if not member:
+            await ctx.followup.send(embed=Embed(color=discord.Color.blue(), description="Usuário não encontrado no servidor"), ephemeral=True)
+            return
+
+        if not forum_channel:
+            await ctx.followup.send(embed=Embed(color=discord.Color.blue(), description="Canal de purges não encontrado no servidor"), ephemeral=True)
+            return
+
+        if not div_council_role:
+            await ctx.followup.send(embed=Embed(color=discord.Color.blue(), description="Cargo de div council não encontrado no servidor"), ephemeral=True)
+            return
+
+        new_thread = await forum_channel.create_thread(name=ctx.user.name, content=div_council_role.mention)
+        await new_thread.message.add_reaction("✅")
+        await new_thread.message.add_reaction("❌")
+
+        await ctx.followup.send(embed=Embed(color=discord.Color.blue(), description="Thread criada!"), ephemeral=True)
+
     async def cog_app_command_error(self, ctx: commands.Context, error: Exception) -> None:
         logger.error(error)
 
         try:
-            await ctx.response.defer()
+            await ctx.response.defer(ephemeral=True)
         except Exception:
             pass
 
