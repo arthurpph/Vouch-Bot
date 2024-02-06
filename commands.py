@@ -311,6 +311,11 @@ class Commands(commands.Cog):
         guild = ctx.guild
         member = await guild.fetch_member(usuario.id)
         member_div = utils.convert_role_to_name(member)
+
+        if member_div == "Casual":
+            await ctx.followup.send(embed=Embed(color=discord.Color.blue(), description="Você não pode criar uma thread para um jogador no rank casual"), ephemeral=True)
+            return
+
         member_div_int = int(member_div.split(" ")[1])
         forum_channel = guild.get_channel(Config.get_div_purge_forum_id(member_div_int))
         div_council_role = guild.get_role(Config.get_div_council_role_id(member_div_int))
@@ -328,8 +333,9 @@ class Commands(commands.Cog):
             return
 
         new_thread = await forum_channel.create_thread(name=ctx.user.name, content=div_council_role.mention)
-        await new_thread.message.add_reaction("✅")
-        await new_thread.message.add_reaction("❌")
+        new_thread_message = new_thread.message
+        await new_thread_message.add_reaction("✅")
+        await new_thread_message.add_reaction("❌")
 
         await ctx.followup.send(embed=Embed(color=discord.Color.blue(), description="Thread criada!"), ephemeral=True)
 
