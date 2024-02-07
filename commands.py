@@ -337,7 +337,7 @@ class Commands(commands.Cog):
             await ctx.followup.send(embed=Embed(color=discord.Color.blue(), description="Cargo de div council não encontrado no servidor"), ephemeral=True)
             return
 
-        new_thread = await forum_channel.create_thread(name=ctx.user.name, content=div_council_role.mention)
+        new_thread = await forum_channel.create_thread(name=usuario.name, content=div_council_role.mention)
         new_thread_message = new_thread.message
         await new_thread_message.add_reaction("✅")
         await new_thread_message.add_reaction("❌")
