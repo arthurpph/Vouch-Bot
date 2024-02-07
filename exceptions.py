@@ -1,3 +1,7 @@
+"""
+:author: Shau
+"""
+
 class InsufficientPermission(Exception):
     pass
 

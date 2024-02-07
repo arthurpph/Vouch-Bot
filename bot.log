@@ -2304,3 +2304,79 @@ In emoji_id: Value "" is not snowflake.
 2024-02-06 20:06:30,508:INFO:discord.client: logging in using static token
 2024-02-06 20:06:31,908:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: e3b5e9937f75d4e3cb4f5ec288cb53ca).
 2024-02-06 20:06:43,045:INFO:discord: Command: /purge_list shauuu_ by shauuu_
+2024-02-07 15:36:41,611:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-07 15:36:41,612:INFO:discord.client: logging in using static token
+2024-02-07 15:36:42,338:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-07 15:36:42,683:INFO:discord: Synced 0 command(s)
+2024-02-07 15:36:42,683:INFO:discord: discord.py API version: 2.3.2
+2024-02-07 15:37:03,514:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-07 15:37:03,515:INFO:discord.client: logging in using static token
+2024-02-07 15:37:04,093:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-07 15:37:42,669:INFO:discord: Synced 0 command(s)
+2024-02-07 15:37:42,669:INFO:discord: discord.py API version: 2.3.2
+2024-02-07 15:37:42,669:ERROR:discord: Error while syncing commands: NameError: name 'platform' is not defined
+2024-02-07 15:37:42,786:INFO:discord.client: logging in using static token
+2024-02-07 15:37:43,472:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-07 15:37:43,792:INFO:discord: Synced 0 command(s)
+2024-02-07 15:37:43,792:INFO:discord: discord.py API version: 2.3.2
+2024-02-07 15:37:43,792:ERROR:discord: Error while syncing commands: NameError: name 'platform' is not defined
+2024-02-07 15:37:43,851:INFO:discord: Loaded extension commands
+2024-02-07 15:37:44,533:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 2ae7a8ba3a04498fac4541c25f8fda25).
+2024-02-07 15:37:56,332:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-07 15:37:56,334:INFO:discord.client: logging in using static token
+2024-02-07 15:37:56,978:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-07 15:37:56,983:INFO:discord.client: logging in using static token
+2024-02-07 15:37:57,515:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-07 15:37:57,519:INFO:discord: Loaded extension commands
+2024-02-07 15:38:26,895:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-07 15:38:26,897:INFO:discord.client: logging in using static token
+2024-02-07 15:38:27,558:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-07 15:38:27,562:INFO:discord.client: logging in using static token
+2024-02-07 15:38:28,176:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-07 15:38:28,180:INFO:discord: Loaded extension commands
+2024-02-07 15:39:14,022:INFO:discord: Synced 7 command(s)
+2024-02-07 15:39:14,022:INFO:discord: discord.py API version: 2.3.2
+2024-02-07 15:39:14,022:INFO:discord: Python version: 3.9.13
+2024-02-07 15:39:14,022:INFO:discord: Running on: Windows 10 (nt)
+2024-02-07 15:39:14,470:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: b34df0f9f75779b800b34f1d181b2e3b).
+2024-02-07 15:40:21,864:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-07 15:40:21,878:INFO:discord.client: logging in using static token
+2024-02-07 15:40:22,511:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-07 15:40:22,514:ERROR:discord: Failed to load extension commands
+ExtensionFailed: Extension 'commands' raised an error: RuntimeError: asyncio.run() cannot be called from a running event loop
+2024-02-07 15:40:22,831:INFO:discord: Synced 0 command(s)
+2024-02-07 15:40:22,831:INFO:discord: discord.py API version: 2.3.2
+2024-02-07 15:40:22,831:INFO:discord: Python version: 3.9.13
+2024-02-07 15:40:22,831:INFO:discord: Running on: Windows 10 (nt)
+2024-02-07 15:40:23,361:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: d3c2408afac71dff67d336c690c33ff7).
+2024-02-07 15:40:46,114:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-07 15:40:46,116:INFO:discord.client: logging in using static token
+2024-02-07 15:40:46,774:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-07 15:40:46,778:INFO:discord.client: logging in using static token
+2024-02-07 15:40:47,357:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-07 15:40:47,361:INFO:discord: Loaded extension commands
+2024-02-07 15:41:11,398:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-07 15:41:11,399:INFO:discord.client: logging in using static token
+2024-02-07 15:41:11,979:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-07 15:41:11,983:INFO:discord.client: logging in using static token
+2024-02-07 15:41:12,586:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-07 15:41:12,590:INFO:discord: Loaded extension commands.py
+2024-02-07 15:41:52,824:INFO:discord: Synced 7 command(s)
+2024-02-07 15:41:52,824:INFO:discord: discord.py API version: 2.3.2
+2024-02-07 15:41:52,824:INFO:discord: Python version: 3.9.13
+2024-02-07 15:41:52,824:INFO:discord: Running on: Windows 10 (nt)
+2024-02-07 15:41:53,296:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 41f9395bc0e114b74d5f80a594416742).
+2024-02-07 15:44:19,934:INFO:discord: Command: /delete_vouch shauuu_ Divisão 3 by shauuu_
+2024-02-07 15:50:23,459:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-07 15:50:23,475:INFO:discord.client: logging in using static token
+2024-02-07 15:50:24,300:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-07 15:50:24,308:INFO:discord.client: logging in using static token
+2024-02-07 15:50:24,860:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-07 15:50:24,881:INFO:discord: Loaded extension commands.py
+2024-02-07 15:50:25,392:INFO:discord: Synced 7 command(s)
+2024-02-07 15:50:25,392:INFO:discord: discord.py API version: 2.3.2
+2024-02-07 15:50:25,392:INFO:discord: Python version: 3.9.13
+2024-02-07 15:50:25,392:INFO:discord: Running on: Windows 10 (nt)
+2024-02-07 15:50:25,866:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 08ad1b0126971e21ac3c43a7fd0df065).
+2024-02-07 15:50:31,194:INFO:discord: Command: /delete_vouch shauuu_ Divisão 2 by shauuu_
+2024-02-07 15:50:31,510:ERROR:discord: Command 'delete_vouch' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction

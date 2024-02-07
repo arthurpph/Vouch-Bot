@@ -1,3 +1,7 @@
+"""
+:author: Shau
+"""
+
 import discord
 from discord import Member, Embed, Forbidden
 

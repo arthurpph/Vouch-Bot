@@ -1,3 +1,7 @@
+"""
+:author: Shau
+"""
+
 import discord
 import os
 import json

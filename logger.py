@@ -1,3 +1,7 @@
+"""
+:author: Shau
+"""
+
 import logging
 import colorlog
 

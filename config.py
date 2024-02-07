@@ -1,6 +1,9 @@
+"""
+:author: Shau
+"""
+
 import os
 import json
-
 
 class Config:
     loaded_config = None

@@ -1,3 +1,7 @@
+"""
+:author: Shau
+"""
+
 import discord
 from discord import app_commands, User, Forbidden, Embed
 from discord.ext import commands
@@ -14,8 +18,6 @@ from logger import get_logger
 from exceptions import InsufficientPermission, InvalidChannelId, InvalidUser, InvalidRole, InvalidRoleId
 from dropdowns import delete_vouch
 
-logger = get_logger()
-
 
 class Commands(commands.Cog):
     def __init__(self, bot):
@@ -30,7 +32,7 @@ class Commands(commands.Cog):
         app_commands.Choice(name="4v4", value=4)
     ])
     async def disponivel(self, ctx: commands.Context, modo: app_commands.Choice[int]):
-        logger.info(f"Command: /disponivel {modo} by {ctx.user.name}")
+        self.bot.logger.info(f"Command: /disponivel {modo} by {ctx.user.name}")
 
         if not check_permission(ctx):
             await ctx.response.send_message(
@@ -67,7 +69,7 @@ class Commands(commands.Cog):
     @app_commands.command(name="give_vouch", description="Atribui um vouch a um usuário")
     @app_commands.describe(usuario="Escolha o usuário", descricao="Adicione uma descrição")
     async def give_vouch(self, ctx: commands.Context, usuario: User, descricao: str):
-        logger.info(f"Command: /give_vouch {usuario} {descricao} by {ctx.user.name}")
+        self.bot.logger.info(f"Command: /give_vouch {usuario} {descricao} by {ctx.user.name}")
 
         if not check_permission(ctx):
             await ctx.response.send_message(
@@ -98,7 +100,7 @@ class Commands(commands.Cog):
         app_commands.Choice(name="Divisão 3", value=3),
     ])
     async def delete_vouch(self, ctx: commands.Context, usuario: User, rank: app_commands.Choice[int]):
-        logger.info(f"Command: /delete_vouch {usuario} {rank.name} by {ctx.user.name}")
+        self.bot.logger.info(f"Command: /delete_vouch {usuario} {rank.name} by {ctx.user.name}")
 
         if not check_permission_only_staff(ctx):
             await ctx.response.send_message(
@@ -117,7 +119,7 @@ class Commands(commands.Cog):
         app_commands.Choice(name="Divisão 3", value=3),
     ])
     async def vouches(self, ctx: commands.Context, usuario: User, rank: app_commands.Choice[int]):
-        logger.info(f"Command: /vouches {usuario} {rank.name} by {ctx.user.name}")
+        self.bot.logger.info(f"Command: /vouches {usuario} {rank.name} by {ctx.user.name}")
 
         guild = ctx.guild
 
@@ -174,7 +176,7 @@ class Commands(commands.Cog):
         app_commands.Choice(name="Divisão 3", value=3),
     ])
     async def promote(self, ctx: commands.Context, usuario: User, rank: app_commands.Choice[int]):
-        logger.info(f"Command: /promote {usuario} {rank.name} by {ctx.user.name}")
+        self.bot.logger.info(f"Command: /promote {usuario} {rank.name} by {ctx.user.name}")
 
         if not check_permission_only_staff(ctx):
             await ctx.response.send_message(
@@ -248,7 +250,7 @@ class Commands(commands.Cog):
     @app_commands.command(name="purge", description="Rebaixa um usuário")
     @app_commands.describe(usuario="Escolha o usuário")
     async def purge(self, ctx: commands.Context, usuario: User):
-        logger.info(f"Command: /purge {usuario} by {ctx.user.name}")
+        self.bot.logger.info(f"Command: /purge {usuario} by {ctx.user.name}")
 
         if not check_permission_only_staff(ctx):
             await ctx.response.send_message(
@@ -298,7 +300,7 @@ class Commands(commands.Cog):
     @app_commands.command(name="purge_list", description="Cria um tópico para votação")
     @app_commands.describe(usuario="Escolha o usuário")
     async def purge_list(self, ctx: commands.Context, usuario: User):
-        logger.info(f"Command: /purge_list {usuario} by {ctx.user.name}")
+        self.bot.logger.info(f"Command: /purge_list {usuario} by {ctx.user.name}")
 
         if not check_permission_only_staff(ctx):
             await ctx.response.send_message(
@@ -345,7 +347,7 @@ class Commands(commands.Cog):
         await ctx.followup.send(embed=Embed(color=discord.Color.blue(), description="Thread criada!"), ephemeral=True)
 
     async def cog_app_command_error(self, ctx: commands.Context, error: Exception) -> None:
-        logger.error(error)
+        self.bot.logger.error(error)
 
         try:
             await ctx.response.defer(ephemeral=True)
