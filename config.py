@@ -58,3 +58,19 @@ class Config:
             return None
 
         return int(Config.loaded_config[f"div{div}PurgeForumId"])
+
+    @staticmethod
+    def get_div_chat_id(div: int):
+        if not Config.loaded_config[f"div{div}ChatId"]:
+            return None
+
+        return int(Config.loaded_config[f"div{div}ChatId"])
+
+    @staticmethod
+    def get_div_mode_role_id(div: int, mode: str):
+        json_key = f"div{div}{mode}RoleId"
+
+        if not Config.loaded_config[json_key]:
+            return None
+
+        return int(Config.loaded_config[json_key])

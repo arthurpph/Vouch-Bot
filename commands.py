@@ -7,7 +7,7 @@ from discord import app_commands, User, Forbidden, Embed
 from discord.ext import commands
 
 import utils
-from utils import check_permission, check_permission_only_staff
+from utils import check_permission, check_permission_only_staff, check_div3_permission
 from main import div_roles
 
 from config import Config
@@ -282,7 +282,9 @@ class Commands(commands.Cog):
 
             guild_role = guild.get_role(role)
             if not guild_role:
-                await ctx.response.send_message(embed=Embed(color=discord.Color.blue(), description="Cargo não encontrado no servidor"), ephemeral=True)
+                await ctx.response.send_message(
+                    embed=Embed(color=discord.Color.blue(), description="Cargo não encontrado no servidor"),
+                    ephemeral=True)
                 return
 
             for role in member.roles:
@@ -315,7 +317,9 @@ class Commands(commands.Cog):
         member_div = utils.convert_role_to_name(member)
 
         if member_div == "Casual":
-            await ctx.followup.send(embed=Embed(color=discord.Color.blue(), description="Você não pode criar uma thread para um jogador no rank casual"), ephemeral=True)
+            await ctx.followup.send(embed=Embed(color=discord.Color.blue(),
+                                                description="Você não pode criar uma thread para um jogador no rank casual"),
+                                    ephemeral=True)
             return
 
         member_div_int = int(member_div.split(" ")[1])
@@ -328,15 +332,21 @@ class Commands(commands.Cog):
         div_council_role = guild.get_role(Config.get_div_council_role_id(member_div_int))
 
         if not member:
-            await ctx.followup.send(embed=Embed(color=discord.Color.blue(), description="Usuário não encontrado no servidor"), ephemeral=True)
+            await ctx.followup.send(
+                embed=Embed(color=discord.Color.blue(), description="Usuário não encontrado no servidor"),
+                ephemeral=True)
             return
 
         if not forum_channel:
-            await ctx.followup.send(embed=Embed(color=discord.Color.blue(), description="Canal de purges não encontrado no servidor"), ephemeral=True)
+            await ctx.followup.send(
+                embed=Embed(color=discord.Color.blue(), description="Canal de purges não encontrado no servidor"),
+                ephemeral=True)
             return
 
         if not div_council_role:
-            await ctx.followup.send(embed=Embed(color=discord.Color.blue(), description="Cargo de div council não encontrado no servidor"), ephemeral=True)
+            await ctx.followup.send(
+                embed=Embed(color=discord.Color.blue(), description="Cargo de div council não encontrado no servidor"),
+                ephemeral=True)
             return
 
         new_thread = await forum_channel.create_thread(name=usuario.name, content=div_council_role.mention)
@@ -346,6 +356,35 @@ class Commands(commands.Cog):
 
         await ctx.followup.send(embed=Embed(color=discord.Color.blue(), description="Thread criada!"), ephemeral=True)
 
+    @app_commands.command(name="div3", description="Anúncia para os div council que você está disponível para batalha")
+    @app_commands.describe(modo="Escolha o modo")
+    @app_commands.choices(modo=[
+        app_commands.Choice(name="1v1", value=1),
+        app_commands.Choice(name="2v2", value=2)
+    ])
+    async def div3(self, ctx: commands.Context, modo: app_commands.Choice[int]):
+        self.bot.logger.info(f"Command: /div3 {modo.name} by {ctx.user.name}")
+
+        if not check_div3_permission(ctx):
+            await ctx.response.send_message(embed=Embed(color=discord.Color.blue(),
+                                                        description="Você deve ser divisão 3 para executar este comando"),
+                                            ephemeral=True)
+            return
+
+        guild = ctx.guild
+        div_3_chat_id = Config.get_div_chat_id(3)
+        div_3_chat = guild.get_channel(div_3_chat_id)
+        div_3_role = guild.get_role(Config.get_div_mode_role_id(3, modo.name))
+
+        if not div_3_chat:
+            raise InvalidChannelId("Divisão 3 canal ID é inválido")
+
+        if not div_3_role:
+            raise InvalidRoleId("Divisão 3 modo role ID é inválido")
+
+        await div_3_chat.send(f"{ctx.user.mention}: {div_3_role.mention}")
+        await ctx.response.send_message("Aviso criado!", ephemeral=True)
+
     async def cog_app_command_error(self, ctx: commands.Context, error: Exception) -> None:
         self.bot.logger.error(error)
 
@@ -354,7 +393,9 @@ class Commands(commands.Cog):
         except Exception:
             pass
 
-        await ctx.followup.send(embed=Embed(color=discord.Color.blue(), title="Erro", description=f"{error.original}\n\n Por favor reporte para shauuu\_"))
+        await ctx.followup.send(embed=Embed(color=discord.Color.blue(), title="Erro",
+                                            description=f"{error.original}\n\n Por favor reporte para shauuu\_"))
+
 
 async def setup(bot):
     await bot.add_cog(Commands(bot))

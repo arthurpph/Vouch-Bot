@@ -156,6 +156,15 @@ def check_permission_only_staff(ctx):
 
     return False
 
+def check_div3_permission(ctx):
+    div3_role_id = Config.get_div_role_id(3)
+
+    for role in ctx.user.roles:
+        if role.id == div3_role_id:
+            return True
+
+    return False
+
 
 def get_minimum_promotion_vouches(guild: discord.Guild, user_id: int):
     role_name = convert_role_to_name(guild.get_member(user_id))

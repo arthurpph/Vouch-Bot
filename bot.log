@@ -2380,3 +2380,18 @@ ExtensionFailed: Extension 'commands' raised an error: RuntimeError: asyncio.run
 2024-02-07 15:50:25,866:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 08ad1b0126971e21ac3c43a7fd0df065).
 2024-02-07 15:50:31,194:INFO:discord: Command: /delete_vouch shauuu_ Divisão 2 by shauuu_
 2024-02-07 15:50:31,510:ERROR:discord: Command 'delete_vouch' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2024-02-07 23:53:41,611:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-07 23:53:41,627:INFO:discord.client: logging in using static token
+2024-02-07 23:53:42,305:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-07 23:53:42,399:INFO:discord.client: logging in using static token
+2024-02-07 23:53:43,092:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-07 23:53:43,146:INFO:discord: Loaded extension commands.py
+2024-02-07 23:53:43,518:INFO:discord: Synced 8 command(s)
+2024-02-07 23:53:43,518:INFO:discord: discord.py API version: 2.3.2
+2024-02-07 23:53:43,518:INFO:discord: Python version: 3.9.13
+2024-02-07 23:53:43,518:INFO:discord: Running on: Windows 10 (nt)
+2024-02-07 23:53:44,032:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 0ff04df3dcf5039001706346e38a67d9).
+2024-02-07 23:54:18,310:INFO:discord: Command: /div3 1v1 by shauuu_
+2024-02-07 23:54:29,926:INFO:discord: Command: /div3 1v1 by shauuu_
+2024-02-07 23:55:02,421:INFO:discord: Command: /div3 1v1 by shauuu_
+2024-02-07 23:55:11,792:INFO:discord: Command: /div3 2v2 by shauuu_
