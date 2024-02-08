@@ -156,11 +156,11 @@ def check_permission_only_staff(ctx):
 
     return False
 
-def check_div3_permission(ctx):
-    div3_role_id = Config.get_div_role_id(3)
+def check_div_or_above_permission(ctx):
+    div_roles = Config.get_div_roles_id()
 
     for role in ctx.user.roles:
-        if role.id == div3_role_id:
+        if role.id in div_roles:
             return True
 
     return False

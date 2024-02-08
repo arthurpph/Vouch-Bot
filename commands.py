@@ -7,7 +7,7 @@ from discord import app_commands, User, Forbidden, Embed
 from discord.ext import commands
 
 import utils
-from utils import check_permission, check_permission_only_staff, check_div3_permission
+from utils import check_permission, check_permission_only_staff, check_div_or_above_permission
 from main import div_roles
 
 from config import Config
@@ -365,9 +365,9 @@ class Commands(commands.Cog):
     async def div3(self, ctx: commands.Context, modo: app_commands.Choice[int]):
         self.bot.logger.info(f"Command: /div3 {modo.name} by {ctx.user.name}")
 
-        if not check_div3_permission(ctx):
+        if not check_div_or_above_permission(ctx):
             await ctx.response.send_message(embed=Embed(color=discord.Color.blue(),
-                                                        description="Você deve ser divisão 3 para executar este comando"),
+                                                        description="Você deve ser divisão 3 ou acima para executar este comando"),
                                             ephemeral=True)
             return
 
