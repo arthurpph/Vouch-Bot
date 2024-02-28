@@ -169,7 +169,7 @@ class Commands(commands.Cog):
 
         if len(embed.fields) == 0:
             embed_temp = Embed(color=discord.Color.blue(),
-                               description=f"{usuario.mention} não tem nenhum vouch para esta divisão.")
+                               description=f"{usuario.mention} não tem nenhum vouch para {rank.name if rank_instance else rank.replace('a', 'ã')}.")
             await ctx.followup.send(embed=embed_temp)
             return
 
