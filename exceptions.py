@@ -19,3 +19,6 @@ class InvalidRole(Exception):
 
 class InvalidRoleId(Exception):
     pass
+
+class DeleteVouchError(Exception):
+    pass

@@ -2,11 +2,11 @@ from typing import Any
 
 import discord
 from discord import SelectOption, Guild, Interaction
-from discord._types import ClientT
 from discord.ui import Select
 
 from vouch import Vouch
 from utils import get_date_from_string_date, get_time_from_string_date
+from exceptions import DeleteVouchError
 
 
 class deleteVouchDropdown(Select):
@@ -38,9 +38,9 @@ class deleteVouchDropdown(Select):
             return
 
         deleted_vouch = Vouch.delete_vouch(self.user_id, selected_values[0])
+
         if not deleted_vouch:
-            await interaction.response.send_message("Erro ao deletar o vouch, por favor reporte para algum staff", ephemeral=True)
-            return
+            raise DeleteVouchError("Erro ao deletar o vouch")
 
         await interaction.response.send_message("Vouch deletado!", ephemeral=True)
 

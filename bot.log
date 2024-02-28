@@ -2395,3 +2395,51 @@ ExtensionFailed: Extension 'commands' raised an error: RuntimeError: asyncio.run
 2024-02-07 23:54:29,926:INFO:discord: Command: /div3 1v1 by shauuu_
 2024-02-07 23:55:02,421:INFO:discord: Command: /div3 1v1 by shauuu_
 2024-02-07 23:55:11,792:INFO:discord: Command: /div3 2v2 by shauuu_
+2024-02-28 16:38:34,253:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-28 16:38:34,261:INFO:discord.client: logging in using static token
+2024-02-28 16:38:35,033:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-28 16:38:35,110:INFO:discord.client: logging in using static token
+2024-02-28 16:38:36,749:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-28 16:38:36,816:ERROR:discord: Failed to load extension commands
+ExtensionFailed: Extension 'commands' raised an error: NameError: name 'ClientT' is not defined
+2024-02-28 16:38:37,296:INFO:discord: Synced 0 command(s)
+2024-02-28 16:38:37,296:INFO:discord: discord.py API version: 2.3.2
+2024-02-28 16:38:37,296:INFO:discord: Python version: 3.9.13
+2024-02-28 16:38:37,296:INFO:discord: Running on: Windows 10 (nt)
+2024-02-28 16:38:37,829:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 13d213a59967a19263057ecc19ea13a7).
+2024-02-28 16:40:43,660:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-28 16:40:43,662:INFO:discord.client: logging in using static token
+2024-02-28 16:40:44,345:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-28 16:40:44,351:INFO:discord.client: logging in using static token
+2024-02-28 16:40:45,049:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-28 16:40:45,052:ERROR:discord: Failed to load extension commands
+ExtensionFailed: Extension 'commands' raised an error: NameError: name 'ClientT' is not defined
+2024-02-28 16:40:45,349:INFO:discord: Synced 0 command(s)
+2024-02-28 16:40:45,349:INFO:discord: discord.py API version: 2.3.2
+2024-02-28 16:40:45,349:INFO:discord: Python version: 3.9.13
+2024-02-28 16:40:45,349:INFO:discord: Running on: Windows 10 (nt)
+2024-02-28 16:40:45,923:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: a7406515e318a579076ab61faa7c76f3).
+2024-02-28 16:41:23,016:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-28 16:41:23,018:INFO:discord.client: logging in using static token
+2024-02-28 16:41:23,549:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-28 16:41:23,556:INFO:discord.client: logging in using static token
+2024-02-28 16:41:24,287:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-28 16:41:24,290:ERROR:discord: Failed to load extension commands
+ExtensionFailed: Extension 'commands' raised an error: NameError: name 'ClientT' is not defined
+2024-02-28 16:41:24,579:INFO:discord: Synced 0 command(s)
+2024-02-28 16:41:24,579:INFO:discord: discord.py API version: 2.3.2
+2024-02-28 16:41:24,579:INFO:discord: Python version: 3.9.13
+2024-02-28 16:41:24,579:INFO:discord: Running on: Windows 10 (nt)
+2024-02-28 16:41:25,126:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 33c90f02437f840ed1546d835211307a).
+2024-02-28 16:45:35,011:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-02-28 16:45:35,013:INFO:discord.client: logging in using static token
+2024-02-28 16:45:35,679:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-28 16:45:35,726:INFO:discord.client: logging in using static token
+2024-02-28 16:45:36,370:INFO:discord: Logged in as Vouch Bot#5139
+2024-02-28 16:45:36,373:ERROR:discord: Failed to load extension commands2
+ExtensionFailed: Extension 'commands2' raised an error: NameError: name 'ClientT' is not defined
+2024-02-28 16:45:36,650:INFO:discord: Synced 0 command(s)
+2024-02-28 16:45:36,650:INFO:discord: discord.py API version: 2.3.2
+2024-02-28 16:45:36,650:INFO:discord: Python version: 3.9.13
+2024-02-28 16:45:36,650:INFO:discord: Running on: Windows 10 (nt)
+2024-02-28 16:45:37,200:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 8e3917f363814c1de137eeff6ec7902f).

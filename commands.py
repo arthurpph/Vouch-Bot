@@ -2,6 +2,8 @@
 :author: Shau
 """
 
+from typing import Union
+
 import discord
 from discord import app_commands, User, Forbidden, Embed
 from discord.ext import commands
@@ -12,8 +14,7 @@ from main import div_roles
 
 from config import Config
 from vouch import Vouch
-from utils import convert_data_to_discord_format, get_past_time_in_months, convert_name_to_role, convert_role_to_name, \
-    promote_player
+from utils import convert_data_to_discord_format, get_past_time_in_months, convert_name_to_role, convert_role_to_name, promote_player
 from logger import get_logger
 from exceptions import InsufficientPermission, InvalidChannelId, InvalidUser, InvalidRole, InvalidRoleId
 from dropdowns import delete_vouch
@@ -24,7 +25,7 @@ class Commands(commands.Cog):
         self.bot = bot
 
     @app_commands.command(name="disponivel", description="Anúncia que você está disponível para batalha")
-    @app_commands.describe(modo="Escolha o modo")
+    @app_commands.describe(modo="O modo que deve aparecer na mensagem")
     @app_commands.choices(modo=[
         app_commands.Choice(name="1v1", value=1),
         app_commands.Choice(name="2v2", value=2),
@@ -68,7 +69,7 @@ class Commands(commands.Cog):
 
     @app_commands.command(name="give_vouch", description="Atribui um vouch a um usuário")
     @app_commands.checks.bot_has_permissions(manage_roles=True)
-    @app_commands.describe(usuario="Escolha o usuário", descricao="Adicione uma descrição")
+    @app_commands.describe(usuario="Qual usuário deve ser aplicado o vouch", descricao="Descrição do vouch")
     async def give_vouch(self, ctx: commands.Context, usuario: User, descricao: str):
         self.bot.logger.info(f"Command: /give_vouch {usuario} {descricao} by {ctx.user.name}")
 
@@ -94,7 +95,7 @@ class Commands(commands.Cog):
             await promote_player(guild, guild.get_member(usuario.id))
 
     @app_commands.command(name="delete_vouch", description="Deleta um vouch de um jogador")
-    @app_commands.describe(usuario="Escolha o usuário", rank="Escolha um rank")
+    @app_commands.describe(usuario="O usuário que deve mostrar os vouches", rank="O rank que deve mostrar os vouches")
     @app_commands.choices(rank=[
         app_commands.Choice(name="Divisão 1", value=1),
         app_commands.Choice(name="Divisão 2", value=2),
@@ -113,14 +114,30 @@ class Commands(commands.Cog):
                                         ephemeral=True)
 
     @app_commands.command(name="vouches", description="Mostra os vouches de um jogador")
-    @app_commands.describe(usuario="Escolha o usuário", rank="Escolha um rank")
+    @app_commands.describe(usuario="O usuário que deve mostrar os vouches (Default: VOCÊ)", rank="Para qual rank deve mostrar os vouches (Default: Próximo rank)")
     @app_commands.choices(rank=[
         app_commands.Choice(name="Divisão 1", value=1),
         app_commands.Choice(name="Divisão 2", value=2),
         app_commands.Choice(name="Divisão 3", value=3),
     ])
-    async def vouches(self, ctx: commands.Context, usuario: User, rank: app_commands.Choice[int]):
-        self.bot.logger.info(f"Command: /vouches {usuario} {rank.name} by {ctx.user.name}")
+    async def vouches(self, ctx: commands.Context, usuario: User = None, rank: Union[app_commands.Choice[int], None] = None):
+        if not usuario:
+            usuario = ctx.user
+
+        if not rank:
+            rank = Vouch.get_vouch_name(usuario)
+
+            if rank == "Divisao 1A":
+                await ctx.response.send_message(embed=Embed(color=discord.Color.blue(), description=f"{usuario.mention} já está na divisão 1."))
+                return
+
+            formatted_rank = rank
+        else:
+            formatted_rank = rank.name.replace("ã", "a")
+
+        rank_instance = isinstance(rank, app_commands.Choice)
+
+        self.bot.logger.info(f"Command: /vouches {usuario} {rank.name if rank_instance else rank} by {ctx.user.name}")
 
         guild = ctx.guild
 
@@ -129,49 +146,41 @@ class Commands(commands.Cog):
             await ctx.response.send_message(embed=embed)
             return
 
+        await ctx.response.defer()
+
         expired = 0
 
-        embed = Embed(title=f"{rank.name} Vouches", color=discord.Color.blue())
+        embed = Embed(title=f"{rank.name if rank_instance else rank} Vouches", color=discord.Color.blue())
         embed.set_author(name=f"{usuario.name} ({usuario.id})", icon_url=usuario.avatar)
 
-        formatted_rank = rank.name.replace("ã", "a")
+        for vouch_id in Vouch.get_user_vouches(usuario.id):
+            attributed_by_user = guild.get_member(Vouch.get_attributed_by(usuario.id, vouch_id))
 
-        try:
-            for vouch_id in Vouch.get_user_vouches(usuario.id):
-                attributed_by_user = guild.get_member(Vouch.get_attributed_by(usuario.id, vouch_id))
-                if not attributed_by_user:
-                    raise InvalidUser("Usuário que atribuiu o vouch é inválido")
+            vouch_issued_at = Vouch.get_date(usuario.id, vouch_id)
 
-                vouch_issued_at = Vouch.get_date(usuario.id, vouch_id)
+            if get_past_time_in_months(vouch_issued_at) >= 4:
+                expired += 1
 
-                if get_past_time_in_months(vouch_issued_at) >= 4:
-                    expired += 1
+            if Vouch.get_vouch(usuario.id, vouch_id) == formatted_rank:
+                embed.add_field(
+                    name=f"{attributed_by_user.name} Vouch | {convert_data_to_discord_format(vouch_issued_at)}",
+                    value=f"Concedido por {attributed_by_user.mention} por {Vouch.get_description(usuario.id, vouch_id)}",
+                    inline=False)
 
-                if Vouch.get_vouch(usuario.id, vouch_id) == formatted_rank:
-                    embed.add_field(
-                        name=f"{attributed_by_user.name} Vouch | {convert_data_to_discord_format(vouch_issued_at)}",
-                        value=f"Concedido por {attributed_by_user.mention} por {Vouch.get_description(usuario.id, vouch_id)}",
-                        inline=False)
-
-            if len(embed.fields) == 0:
-                embed_temp = Embed(color=discord.Color.blue(),
-                                   description=f"{usuario.mention} não tem nenhum vouch para esta divisão")
-                await ctx.response.send_message(embed=embed_temp)
-                return
-
-        except InvalidUser as e:
-            embed = Embed(color=discord.Color.blue(), description=f"Erro: {e}")
-            await ctx.response.send_message(embed=embed, ephemeral=True)
+        if len(embed.fields) == 0:
+            embed_temp = Embed(color=discord.Color.blue(),
+                               description=f"{usuario.mention} não tem nenhum vouch para esta divisão.")
+            await ctx.followup.send(embed=embed_temp)
             return
 
         embed.set_footer(text=f"+ {str(expired)} Vouch(es) expirados\n"
                               f"(Vouches expiram depois de 4 meses)")
 
-        await ctx.response.send_message(embed=embed)
+        await ctx.followup.send(embed=embed)
 
     @app_commands.command(name="promote", description="Promove um usuário para uma divisão")
     @app_commands.checks.bot_has_permissions(manage_roles=True)
-    @app_commands.describe(usuario="Escolha um usuário", rank="Escolha um rank")
+    @app_commands.describe(usuario="O usuário que deve ser promovido", rank="O rank que o usuário deve ser promovido")
     @app_commands.choices(rank=[
         app_commands.Choice(name="Divisão 1", value=1),
         app_commands.Choice(name="Divisão 2", value=2),
@@ -233,7 +242,7 @@ class Commands(commands.Cog):
 
     @app_commands.command(name="purge", description="Rebaixa um usuário")
     @app_commands.checks.has_permissions(manage_roles=True)
-    @app_commands.describe(usuario="Escolha o usuário")
+    @app_commands.describe(usuario="O usuário que deve ser rebaixado")
     async def purge(self, ctx: commands.Context, usuario: User):
         self.bot.logger.info(f"Command: /purge {usuario} by {ctx.user.name}")
 
@@ -274,7 +283,7 @@ class Commands(commands.Cog):
             embed=Embed(color=discord.Color.blue(), description="Usuário rebaixado com sucesso"), ephemeral=True)
 
     @app_commands.command(name="purge_list", description="Cria um tópico para votação")
-    @app_commands.describe(usuario="Escolha o usuário")
+    @app_commands.describe(usuario="O usuário que deve será o título do tópico")
     async def purge_list(self, ctx: commands.Context, usuario: User):
         self.bot.logger.info(f"Command: /purge_list {usuario} by {ctx.user.name}")
 
@@ -329,7 +338,7 @@ class Commands(commands.Cog):
         await ctx.followup.send(embed=Embed(color=discord.Color.blue(), description="Thread criada!"), ephemeral=True)
 
     @app_commands.command(name="div3", description="Anúncia para os div council que você está disponível para batalha")
-    @app_commands.describe(modo="Escolha o modo")
+    @app_commands.describe(modo="O modo que deve aparecer na mensagem")
     @app_commands.choices(modo=[
         app_commands.Choice(name="1v1", value=1),
         app_commands.Choice(name="2v2", value=2)
