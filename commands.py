@@ -163,8 +163,8 @@ class Commands(commands.Cog):
 
             if Vouch.get_vouch(usuario.id, vouch_id) == formatted_rank:
                 embed.add_field(
-                    name=f"{attributed_by_user.name} Vouch | {convert_data_to_discord_format(vouch_issued_at)}",
-                    value=f"Concedido por {attributed_by_user.mention} por {Vouch.get_description(usuario.id, vouch_id)}",
+                    name=f"{attributed_by_user.name if attributed_by_user else 'Usuário não encontrado'} Vouch | {convert_data_to_discord_format(vouch_issued_at)}",
+                    value=f"Concedido por {attributed_by_user.mention if attributed_by_user else 'Usuário não encontrado'} por {Vouch.get_description(usuario.id, vouch_id)}",
                     inline=False)
 
         if len(embed.fields) == 0:
