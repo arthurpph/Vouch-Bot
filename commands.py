@@ -376,6 +376,8 @@ class Commands(commands.Cog):
 
         if isinstance(error, app_commands.BotMissingPermissions):
             await ctx.followup.send(embed=Embed(color=discord.Color.blue(), title="Erro", description=f"Eu não tenho a(s) permissão(ões): {', '.join(error.missing_permissions)}"))
+        elif isinstance(error, app_commands.MissingPermissions):
+            await ctx.followup.send(embed=Embed(color=discord.Color.blue(), title="Erro", description="Você não tem permissão para executar isso!"))
         else:
             await ctx.followup.send(embed=Embed(color=discord.Color.blue(), title="Erro",
                                                 description=f"{error.original}\n\n Por favor reporte para shauuu\_"))
